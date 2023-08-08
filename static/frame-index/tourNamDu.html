@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Tour Nam Du</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" href="images/favicon.png" type="image/x-icon">
+        
+        <!-- Google Fonts -->   
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i%7CMerriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+        
+        <!-- Bootstrap Stylesheet -->   
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <!-- Font Awesome Stylesheet -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+            
+        <!-- Custom Stylesheets --> 
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" id="cpswitch" href="css/orange.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        
+        <!--Date-Picker Stylesheet-->
+        <link rel="stylesheet" href="css/datepicker.css">
+        
+        <!-- Slick Stylesheet -->
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/slick-theme.css">
+    </head>
+    
+    
+     <body id="main-homepage">
+
+    <!-- nut thich -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0" nonce="4p7QJkfx"></script>
+    <!-- end nut thich -->
+    <!-- comment -->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0" nonce="xT4XudaW"></script>
+        <!-- end comment -->
+    
+    
+        <!--====== LOADER =====-->
+        <div class="loader"></div>
+    
+    
+        <!--======== SEARCH-OVERLAY =========-->       
+        <div class="overlay">
+            <a href="javascript:void(0)" id="close-button" class="closebtn">&times;</a>
+            <div class="overlay-content">
+                <div class="form-center">
+                    <form>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Tìm kiếm..." required />
+                                <span class="input-group-btn"><button type="submit" class="btn"><span><i class="fa fa-search"></i></span></button></span>
+                            </div><!-- end input-group -->
+                        </div><!-- end form-group -->
+                    </form>
+                </div><!-- end form-center -->
+            </div><!-- end overlay-content -->
+        </div><!-- end overlay -->
+        
+        <!--============= TOP-BAR ===========-->
+    <div id="top-bar" class="tb-text-white">
+        <div class="container">
+            <div class="row">          
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div id="info">
+                        <ul class="list-unstyled list-inline">
+                            <li><span><i class="fa fa-map-marker"></i></span>Khoa Công nghệ thông tin và truyền thông - Đại Học Đà Nẵng</li>
+                            <li><span><i class="fa fa-phone"></i></span>+0338.909.973</li>
+                        </ul>
+                    </div><!-- end info -->
+                </div><!-- end columns -->
+                
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div id="links">
+                        <ul class="list-unstyled list-inline">
+                             <li><button class="btn-default" data-toggle="modal" data-target="#edit-profile"><i class="fa fa-sign-in" aria-hidden="true"></i> Đăng Nhập</button></li>
+                            <li><button class="btn-default" data-toggle="modal" data-target="#edit-profile1"><i class="fa fa-user-circle" aria-hidden="true"></i> Đăng Ký</button></li>
+                        </ul>
+                    </div><!-- end links -->
+                </div><!-- end columns -->              
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end top-bar -->
+
+        <nav class="navbar navbar-default main-navbar navbar-custom navbar-white" id="mynavbar-1">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" id="menu-button">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+              </button>
+              <div class="header-search hidden-lg">
+                <a href="javascript:void(0)" class="search-button"><span><i class="fa fa-search"></i></span></a>
+            </div>
+            <a href="index.html" class="navbar-brand"><span><i class="fa fa-plane"></i>STAR</span>TRAVELS</a>
+        </div><!-- end navbar-header -->
+        
+        <div class="collapse navbar-collapse" id="myNavbar1" color:yellow;>
+            <ul class="nav navbar-nav navbar-right navbar-search-link">
+                <li class="dropdown" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Trang chủ<span><i class="fa fa-angle-down"></i></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Trang chủ chính</a></li>
+                        <li><a href="flight-homepage.html">Trang chủ chuyến bay</a></li>
+                        <li><a href="hotel-homepage.html">trang chủ khách sạn</a></li>
+                        <li><a href="tour-homepage.html">Trang chủ tour</a></li>
+                        <li><a href="dashboard.html">Trang quản lí</a></li>
+                    </ul>           
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Chuyến bay<span><i class="fa fa-angle-down"></i></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="flight-homepage.html">Trang chủ chuyến bay</a></li>
+                    </ul>           
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Khách sạn<span><i class="fa fa-angle-down"></i></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="hotel-homepage.html">Trang chủ khách sạn</a></li>
+                        <li><a href="hotel-listing-left-sidebar.html">Danh sách khách sạn</a></li>
+                        <li><a href="hotel-detail-left-sidebar.html">Chi tiết Khách sạn</a></li>
+                    </ul>           
+                </li>
+                <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Tours<span><i class="fa fa-angle-down"></i></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tour-homepage.html">Trang chủ tour</a></li>
+                        <li><a href="tour-listing-left-sidebar.html">Danh sách tour</a></li>
+                        <li><a href="tour-detail-left-sidebar.html">Chi tiết tour</a></li>
+                    </ul>           
+                </li>
+                <li><a href="javascript:void(0)" class="search-button"><span><i class="fa fa-search"></i></span></a></li>
+            </ul>
+        </div><!-- end navbar collapse -->
+    </div><!-- end container -->
+</nav><!-- end navbar -->
+
+<div class="sidenav-content">
+    <div id="mySidenav" class="sidenav" >
+        <h2 id="web-name"><span><i class="fa fa-plane"></i></span>DU LỊCH</h2>
+
+        <div id="main-menu">
+            <div class="closebtn">
+                <button class="btn btn-default" id="closebtn">&times;</button>
+            </div><!-- end close-btn -->
+            
+            <div class="list-group panel">
+
+                <a href="#home-links" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-home link-icon"></i></span>Trang chủ<span><i class="fa fa-chevron-down arrow"></i></span></a>
+                <div class="collapse sub-menu" id="home-links">
+                    <a href="index.html" class="list-group-item">Trang chủ chính</a>
+                    <a href="flight-homepage.html" class="list-group-item">Trang chủ chuyến bay</a>
+                    <a href="hotel-homepage.html" class="list-group-item">Trang chủ khách sạn</a>
+                    <a href="tour-homepage.html" class="list-group-item">Trang chủ tour</a>
+                </div><!-- end sub-menu -->
+                
+                <a href="#flights-links" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-plane link-icon"></i></span>Chuyến bay<span><i class="fa fa-chevron-down arrow"></i></span></a>
+                <div class="collapse sub-menu" id="flights-links">
+                    <a href="flight-homepage.html" class="list-group-item">Trang chủ chuyến bay</a>
+                </div><!-- end sub-menu -->
+                
+                <a href="#hotels-links" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-building link-icon"></i></span>Khách sạn<span><i class="fa fa-chevron-down arrow"></i></span></a>
+                <div class="collapse sub-menu" id="hotels-links">
+                    <a href="hotel-homepage.html" class="list-group-item">Trang chủ khách sạn</a>
+                    <a href="hotel-listing-left-sidebar.html" class="list-group-item">Danh sách khách sạn</a>
+                    <a href="hotel-detail-left-sidebar.html" class="list-group-item">Chi tiết khách sạn</a>
+                </div><!-- end sub-menu -->
+                
+                <a href="#tours-links" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-globe link-icon"></i></span>Tours<span><i class="fa fa-chevron-down arrow"></i></span></a>
+                <div class="collapse sub-menu" id="tours-links">
+                    <a href="tour-homepage.html" class="list-group-item">Trang chủ tour</a>
+                    <a href="tour-listing-left-sidebar.html" class="list-group-item">Danh sách tour</a>
+                    <a href="tour-detail-left-sidebar.html" class="list-group-item">Chi tiết tour</a>
+                </div><!-- end sub-menu -->
+
+                 <a href="#dashboard" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-cogs link-icon"></i></span>Trang quản lí<span><i class="fa fa-chevron-down arrow"></i></span></a>
+                 <div class="collapse sub-menu" id="dashboard">
+                    <a href="dashboard.html" class="list-group-item">Trang quản lí</a>
+                    <a href="user-profile.html" class="list-group-item">Hồ sơ</a>
+                    <a href="booking.html" class="list-group-item">Đặt trước</a>
+                </div><!-- end sub-menu -->
+                
+            </div><!-- end list-group -->
+        </div><!-- end main-menu -->
+    </div><!-- end mySidenav -->
+</div><!-- end sidenav-content -->
+        
+        <!--================ PAGE-COVER ================-->
+        <section class="page-cover" id="cover-tour-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 class="page-title">Tour Nam Du 2N2D: Khám phá Đảo Nam Du - Hòn Củ Tron</h1>
+                        <ul class="breadcrumb">
+                            <li><a href="tour-homepage.html">Trang chủ</a></li>
+                            <li class="active">Chi tiết tour Nam Du</li>
+                        </ul>
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end page-cover -->
+        
+        
+       <!--===== INNERPAGE-WRAPPER ====-->
+        <section class="innerpage-wrapper">
+            <div id="hotel-details" class="innerpage-section-padding">
+                <div class="container">
+                    <div class="row">           
+                        
+                        <div class="col-xs-12 col-sm-12 col-md-3 side-bar left-side-bar">
+                            
+                            <div class="side-bar-block booking-form-block">
+                                <h2 class="selected-price">Thông tin</h2>
+                            
+                                <div class="booking-form">
+                                    <h3>Đặt tour</h3>
+                                    <p>Tìm tour du lịch trong mơ của bạn ngày hôm nay</p>
+                                    
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Họ tên" />                                       
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Họ" />                                       
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email" />                                       
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Điện thoại" />                                       
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Thành phố" />                                       
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <input type="text" class="form-control dpd1" placeholder="Ngày đặt tour" />                                              <i class="fa fa-calendar"></i>
+                                        </div>
+                                        
+                                        <div class="row">
+                                                <div class="col-sm-6 col-md-12 col-lg-6 no-sp-r">
+                                                    <div class="form-group right-icon">
+                                                        <select class="form-control">
+                                                            <option selected>Người lớn</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                        </select>
+                                                        <i class="fa fa-angle-down"></i>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-sm-6 col-md-12 col-lg-6 no-sp-l">    
+                                                    <div class="form-group right-icon">
+                                                        <select class="form-control">
+                                                            <option selected>Trẻ em</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                        </select>
+                                                        <i class="fa fa-angle-down"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                        <div class="form-group right-icon">
+                                            <select class="form-control">
+                                                <option selected>Phương thức thanh toán</option>
+                                                <option>Thẻ tín dụng</option>
+                                                <option>Paypal</option>
+                                            </select>
+                                            <i class="fa fa-angle-down"></i>
+                                        </div>
+                                        
+                                        <div class="checkbox custom-check">
+                                            <input type="checkbox" id="check01" name="checkbox"/>
+                                            <label for="check01"><span><i class="fa fa-check"></i></span>Bằng cách tiếp tục, bạn đồng ý với <a href="#">Điều khoản & Điều kiện</a></label>
+                                        </div>
+                                        
+                                        <button type="button" class="btn btn-block btn-orange " data-toggle="modal" data-target="#xacnhan">Xác nhận đặt tour</button>
+                                    </form>
+
+                                </div><!-- end booking-form -->
+                            </div><!-- end side-bar-block -->
+                            
+                            <div class="row">
+                                   <div class="col-xs-12 col-sm-12 col-md-12">    
+                                    <div class="side-bar-block support-block">
+                                        <h3>Liên hệ</h3>
+                                        <p>Mọi thắc mắc quý khách hàng xin vui lòng liên hệ:
+                                        </p>
+                                            <p><span><i class="fa fa-phone"></i></span> +0338.909.973</p>
+                                            <p><span><i class="fa fa-envelope"></i></span> tranmylinh849@gmail.com</p>
+                                             <p><span><i class="fa fa-envelope"></i></span> tttxuan.19it3@sict.udn.vn</p>
+                                    </div><!-- end side-bar-block -->
+                                </div><!-- end columns -->
+                                
+                            </div><!-- end row -->
+                        </div><!-- end columns -->
+                        
+                        
+                        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 content-side">
+                            
+                            <div class="detail-slider">
+                                <div class="feature-slider">
+                                    <div><img src="images/NamDu1.jpg" class="img-responsive" alt="feature-img"/></div>
+                                    <div><img src="images/NamDu2.jpg" class="img-responsive" alt="feature-img"/></div>
+                                    <div><img src="images/NamDu3.jpg" class="img-responsive" alt="feature-img"/></div>
+                                    <div><img src="images/NamDu4.jpg" class="img-responsive" alt="feature-img"/></div>
+                                    <div><img src="images/NamDu5.jpg" class="img-responsive" alt="feature-img"/></div>
+                                </div><!-- end feature-slider -->
+                                
+                                <div class="feature-slider-nav">
+                                    <div><img src="images/NamDu1.jpg" class="img-responsive" alt="feature-thumb"/></div>
+                                    <div><img src="images/NamDu2.jpg" class="img-responsive" alt="feature-thumb"/></div>
+                                    <div><img src="images/NamDu3.jpg" class="img-responsive" alt="feature-thumb"/></div>
+                                    <div><img src="images/NamDu4.jpg" class="img-responsive" alt="feature-thumb"/></div>
+                                    <div><img src="images/NamDu5.jpg" class="img-responsive" alt="feature-thumb"/></div>
+                                </div><!-- end feature-slider-nav -->
+
+                                <ul class="list-unstyled features tour-features">
+                                    <li><div class="f-icon"><i class="fa fa-map-marker"></i></div><div class="f-text"><p class="f-heading">Từ HCM</p><p class="f-data">đến Kiên Giang</p></div></li>
+                                     <li><div class="f-icon"><i class="fa fa-hand-o-right"></i></div><div class="f-text"><p class="f-heading">Tour bán chạy</p><p class="f-data">1.868k/khách</p></div></li>
+                                </ul>
+                            </div><!-- end detail-slider -->  
+
+                            <div class="detail-tabs">
+                                <ul class="nav nav-tabs nav-justified">
+                                    <li class="active"><a href="#tour-information" data-toggle="tab">Thông tin về tour</a></li>
+                                    <li><a href="#flight" data-toggle="tab">Những trải nghiệm thú vị</a></li>
+                                    <li><a href="#map-overview" data-toggle="tab">Chương trình tour</a></li>
+                                </ul>
+                                
+                                <div class="tab-content">
+
+                                    <div id="tour-information" class="tab-pane in active">
+                                        <div class="row">
+                                            <div class="col-sm-4 col-md-4 tab-img">
+                                                <img src="images/hotelNamDu1.jpg" class="img-responsive" alt="flight-detail-img" />
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-sm-8 col-md-8 tab-text">
+                                                <h3>Thông tin về tour</h3>
+                                                <p>Đảo Nam Du là một trong những hòn đảo đẹp nhất ở Kiên Giang. Với vẻ đẹp hoang sơ cùng bãi biển trong xanh, bãi cát trắng ngần, nơi đây đã làm say lòng biết bao du khách. Nam Du hội tụ đủ các yếu tố: cảnh đẹp, đồ ăn ngon, chi phí rẻ nên rất được lòng những đôi chân muốn đi lang thang khám phá những vùng đất lạ. Cùng iVIVU khám phá ngay hôm nay!</p>
+                                            </div><!-- end columns -->
+                                        </div><!-- end row -->
+                                    </div><!-- end hotel-overview -->
+                                    
+                                    <div id="flight" class="tab-pane">
+                                        <div class="row">
+                                            <div class="col-sm-4 col-md-4 tab-img">
+                                                <img src="images/hotelNamDu1.jpg" class="img-responsive" alt="flight-detail-img" />
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-sm-8 col-md-8 tab-text">
+                                                <h3>Những trải nghiệm thú vị</h3>
+                                                <p>Nam Du hấp dẫn du khách bởi<br/>
+                                                    <b>- Hòn Lớn:</b> đẹp và thu hút nhiều du khách nhờ có nhiều cảnh quan hấp dẫn lay động lòng người. Hơn nữa, vì đây là trung tâm của đảo nên không khí lúc nào cũng sôi động, nhộn nhip. Về đêm, hàng trăm chiếc thuyền câu mực giăng đèn lấp lánh ngoài khơi trông như những chòm sao lung linh, huyền ảo.<br>
+                                                    <b>- Hòn Mấu:</b> nhiều người sẽ ngỡ ngàng trước vẻ đẹp mà thiên nhiên ban tặng. Nơi đây có các bãi biển đẹp hoang sơ, được đặt tên theo mùa gió thổi: bãi Chướng, bãi Bấc, bãi Nồm.
+                                                </p>
+                                            </div><!-- end columns -->
+                                        </div><!-- end row -->
+                                    </div><!-- end restaurant -->
+                                    
+                                    <div id="map-overview" class="tab-pane">
+                                        <div class="row">
+                                            <div class="col-sm-4 col-md-4 tab-img">
+                                                <img src="images/hotelNamDu2.jpg" class="img-responsive" alt="flight-detail-img" /> <br>
+                                                <img src="images/hotelNamDu3.jpg" class="img-responsive" alt="flight-detail-img" /> <br>
+                                                <img src="images/hotelNamDu4.jpg" class="img-responsive" alt="flight-detail-img" /><br>
+                                                <img src="images/hotelNamDu5.jpg" class="img-responsive" alt="flight-detail-img" /><br>
+                                                <img src="images/hotelNamDu6.jpg" class="img-responsive" alt="flight-detail-img" /><br>
+                                                <img src="images/hotelNamDu7.jpg" class="img-responsive" alt="flight-detail-img" /><br>
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-sm-8 col-md-8 tab-text">
+                                                <h3>Chương trình tour</h3>
+                                                <p> <!-- tour 1 -->
+                                                    <u><b>NGÀY 1: RẠCH GIÁ - KHÁM PHÁ QUẦN ĐẢO NAM DU</b></u> <br>
+                                                    <p> <!-- day 1 -->
+                                                        <h4>Buổi sáng:</h4>
+                                                        <ul>
+                                                            <li>07h30:  đoàn dùng bữa sáng đậm chất khẩu vị vùng sông nước tại Miền Tây Nam Bộ.</li>
+                                                            <li>Đoàn sẽ đón chuyến cao tốc đến Hòn Lớn: còn gọi là hòn Củ Tron, 1 trong 21 hòn đảo lớn nhỏ nằm trong quần đảo Nam Du. Trên đường tàu ngoạn cảnh qua Hòn Tre, Hòn Sơn, Quý khách có dịp ngoạn cảnh chiêm ngưỡng– những hòn đảo còn mang vẻ đẹp hoang sơ và cảnh sắc vùng biển trời Tây Nam của Tổ quốc, phía xa là những hòn đảo đan xen với nhau, mỗi hòn đảo có nét đẹp riêng. Qúy khách bắt đầu say mình với cảnh non nước, trời mây, biển trong vắt tạo thành một bức tranh thiên nhiên tuyệt đẹp của nơi bồng lai.</li>
+                                                        </ul>
+                                                        <h4>Buổi trưa:</h4>
+                                                        <ul>
+                                                            <li>10h30 Quý khách dùng cơm trưa tại Nhà hàng.</li>
+                                                        </ul>
+                                                        <h4>Buổi chiều:</h4>
+                                                        <ul>
+                                                            <li>14h00: Đoàn lên tàu đi tham quan Hòn Mấu, trên đường ngang qua Hòn Ngang – trung tâm xã Nam Du nơi tập trung người dân sinh sống, tham quan bãi Bấc (còn gọi là bãi Đá Đen) có những tảng đá lớn, nhỏ nhấp nhô theo từng con sóng. Tiếp tục đón Hòn Hai Bờ Đập với phong cảnh hoang sơ, Quý khách tự do tắm biển, lặn ngắm san hô, bắt hải sản (nhum, sò, ốc, …). Tàu tiếp tục đưa du khách đến với bãi biển Hòn Mấu, đoàn tự do tắm biển và ăn hải sản, uống nước dừa xiêm ngon ngọt tại các hàng quán trên bãi biển.</li>
+                                                            <li>Kết thúc chương trình tham quan Hòn Mấu, quý khách về lại Hòn Lớn tắm rửa vệ sinh sạch sẽ tại nhà nghỉ.</li>
+                                                        </ul>
+                                                        <h4>Buổi tối:</h4>
+                                                        <ul>
+                                                            <li>Quý khách thưởng thức bữa tối đậm đà hương vị miền biển tại Nam Du. Buổi tối được chuẩn bị các món ăn đặc sản của Nam Du như: Cháo Nhum, Cá Xanh Xương nướng giấy bạc, Mực Lá nướng muối ớt, Các loại Sò, Ốc hải sản,.. đặc biệt món Lẩu Hải Sản Nam Du ăn với bún và rau sống chua chua ngọt ngọt đậm đà của miền biển.</li>
+                                                        </ul>
+                                                    </p> <!-- end day 1 -->
+                                                    <u><b>NGÀY 2: HÒN MẤU - RẠCH GIÁ - TP HỒ CHÍ MINH</b></u> <br>
+                                                    <p> <!-- day 2 -->
+                                                        <h4>Buổi Sáng:</h4>
+                                                        <ul>
+                                                            <li>Quý khách có thể thức sớm để ngắm nhìn ánh bình minh trên đảo, hòa mình vào cảnh sắc thiên nhiên, cuộc sống thường ngày của người dân trên đảo.
+                                                                <ul>
+                                                                    <li>6h00: Dùng bữa sáng.</li>
+                                                                    <li>7h00: Đoàn khám phá cảnh sắc trên Hòn Lớn bằng xe máy, tham quan, tắm tại bãi biển Đất Đỏ – Giếng Tiên, một trong những bãi tắm đẹp của đảo. Đến dốc Ân Tình ngắm toàn cảnh Bãi Ngự từ trên cao – là bãi tắm sạch đẹp vào mùa gió nam, và có dấu ấn rất đặc biệt vì là nơi vua Gia Long chạy giặc sang Xiêm đã dừng chân “ngự giá” tại đây. Đoàn chụp ảnh tại cây cô đơn nổi tiếng trên đảo Hòn Lớn.
+                                                                        <ul>
+                                                                            <li>Đặc biệt: Chinh phục Hải đăng Nam Du nằm trên đỉnh Hòn Lớn (Củ Tron), được xem là ngọn hải đăng cao nhất Việt Nam nhờ nằm ở định đồi cao hơn 300 mét so với mực nước biển.</li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>09h30: Đoàn trả phòng, di chuyển ra bến tàu để khởi hành về đất liền.</li>
+                                                            <li>12h30: đến đất liền, đoàn dùng cơm trưa tại nhà hàng. Sau đó, khởi hành về TP.HCM, trên đường Quý khách dừng châm mua đặc sản thốt nốt, nem Lai Vung,… về làm quà cho người thân. Về đến TP Hồ Chí Minh, HDV du lịch chia tay Đoàn và hẹn gặp lại ở hành trình tiếp theo.</li>
+                                                        </ul>
+                                                    </p>
+                                                </p> <!-- end tour 1 -->
+                                            </div><!-- end columns -->
+                                        </div><!-- end row -->
+                                    </div><!-- end pick-up -->
+                                    
+                                </div><!-- end tab-content -->
+                            </div><!-- end detail-tabs -->
+
+                            <!-- comment -->
+                            <div>
+                                <div class="fb-comments" data-href="https://www.facebook.com/TQ-Art-Studio-100193108414582/?modal=admin_todo_tour" data-numposts="5" data-width="100%">
+                                </div>
+                            </div> <!-- end comment -->
+
+                                                       
+                            <div class="pages">
+                                <ol class="pagination">
+                                    <li><a href="#" aria-label="Previous"><span aria-hidden="true"><i class="fa fa-angle-left"></i></span></a></li>
+                                    <li><a href="tour-homepage.html">1</a></li>
+                                    <li><a href="tour-detail-left-sidebar.html">2</a></li>
+                                    <li><a href="tourBinhBa.html">3</a></li>
+                                    <li class="active"><a href="tourNamDu.html">4</a></li>
+                                    <li><a href="TourDaNangHue.html" aria-label="Next"><span aria-hidden="true"><i class="fa fa-angle-right"></i></span></a></li>
+                                </ol>
+                            </div><!-- end pages -->
+                        </div><!-- end columns -->
+
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div><!-- end tour-detail -->
+        </section><!-- end innerpage-wrapper -->
+        
+        
+        <!--======================= BEST FEATURES =====================-->
+        <section id="best-features" class="banner-padding black-features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="b-feature-block">
+                            <span><i class="fa fa-dollar"></i></span>
+                            <h3>Đảm bảo giá tốt nhất</h3>
+                            <p>Cung cấp những ưu đãi hấp dẫn khách hàng khi lựa chọn tour.</p>
+                        </div><!-- end b-feature-block -->
+                   </div><!-- end columns -->
+                   
+                   <div class="col-sm-6 col-md-3">
+                        <div class="b-feature-block">
+                            <span><i class="fa fa-lock"></i></span>
+                            <h3>An toàn và bảo mật</h3>
+                            <p>Du Lịch Việt cam kết sẽ bảo mật những thông tin mang tính riêng tư của khách hàng, nhằm tôn trọng và bảo vệ quyền lợi của người truy cập.</p>
+                        </div><!-- end b-feature-block -->
+                   </div><!-- end columns -->
+                   
+                   <div class="col-sm-6 col-md-3">
+                        <div class="b-feature-block">
+                            <span><i class="fa fa-thumbs-up"></i></span>
+                            <h3>Đại lý du lịch tốt nhất</h3>
+                            <p>Làm cho quá trình lập kế hoạch du lịch dễ dàng hơn cho khách hàng của họ và đảm bảo họ trải nghiệm chuyến đi tốt nhất có thể.</p>
+                        </div><!-- end b-feature-block -->
+                   </div><!-- end columns -->
+                   
+                   <div class="col-sm-6 col-md-3">
+                        <div class="b-feature-block">
+                            <span><i class="fa fa-bars"></i></span>
+                            <h3>Hướng dẫn du lịch</h3>
+                            <p>Hướng dẫn viên sẽ sử dụng ngôn ngữ để giới thiệu, giải thích, hướng dẫn, giải đáp cho khách du lịch về văn hóa, lịch sử, ý nghĩa của các địa danh du lịch.</p>
+                        </div><!-- end b-feature-block -->
+                   </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end best-features -->
+        
+        
+        <!--========================= NEWSLETTER-1 ==========================-->
+        <section id="newsletter-1" class="section-padding back-size newsletter"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                        <h2>Theo dõi bản tin của chúng tôi</h2> <br>
+                        <form>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="email" class="form-control input-lg" placeholder="Nhập địa chỉ email của bạn" required/>
+                                    <span class="input-group-btn"><button class="btn btn-lg"><i class="fa fa-envelope"></i></button></span>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end newsletter-1 -->
+
+        
+        
+        
+<!--======================= FOOTER =======================-->
+<section id="footer" class="ftr-heading-o ftr-heading-mgn-1">
+
+    <div id="footer-top" class="banner-padding ftr-top-black ftr-text-white">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-widget ftr-contact">
+                    <h3 class="footer-heading">Liên hệ chúng tôi</h3>
+                    <ul class="list-unstyled">
+                        <li><span><i class="fa fa-map-marker"></i></span>Khoa Công nghệ thông tin và truyền thông - Đại Học Đà Nẵng</li>
+                        <li><span><i class="fa fa-phone"></i></span>+0338.909.973</li>
+                        <li><span><i class="fa fa-envelope"></i></span>tranmylinh849@gmail.com</li>
+                        <li><div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div></li>
+                    </ul>
+                </div><!-- end columns -->
+
+                <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 footer-widget ftr-links">
+                    <h3 class="footer-heading">Công ty</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="flight-homepage.html">Chuyến bay</a></li>
+                        <li><a href="hotel-homepage.html">Khách sạn</a></li>
+                        <li><a href="tour-homepage.html">Tour</a></li>
+                    </ul>
+                </div><!-- end columns -->
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-widget ftr-links ftr-pad-left">
+                    <h3 class="footer-heading">Tài nguyên</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="about-us.html">Liên hệ chúng tôi</a></li>
+                        <li><a href="login.html">Đăng nhập</a></li>
+                        <li><a href="registration.html">Đăng ký</a></li>
+                        <li><a href="contact-us.html">Sơ đồ trang web</a></li>
+                    </ul>
+                </div><!-- end columns -->
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 footer-widget ftr-about">
+                    <h3 class="footer-heading">Về chúng tôi</h3>
+                    <p>Với mong muốn phục vụ ngày càng nhiều khách du lịch Việt Nam và Thế giới. Logo của chúng tôi lấy màu chủ đạo là màu vàng màu của mảnh đất mẹ Việt Nam, những con người Việt Nam hiền lành, thân thiện luôn khát khao khám phá đất nước.</p>
+                    <ul class="social-links list-inline list-unstyled">
+                        <li><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
+                        <li><a href="#"><span><i class="fa fa-google-plus"></i></span></a></li>
+                        <li><a href="#"><span><i class="fa fa-instagram"></i></span></a></li>
+                        <li><a href="#"><span><i class="fa fa-youtube-play"></i></span></a></li>
+                    </ul>
+                </div><!-- end columns -->
+
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end footer-top -->
+
+    <div id="footer-bottom" class="ftr-bot-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="copyright">
+                    <p>© 2020 <a href="#">StarTravel</a>.</p>
+                </div><!-- end columns -->
+
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="terms">
+                    <ul class="list-unstyled list-inline">
+                        <li><a href="#">Điều khoản và điều kiện</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div><!-- end columns -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end footer-bottom -->
+
+</section><!-- end footer -->
+
+ <div id="edit-profile" class="modal custom-modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div><!-- end modal-header -->
+                    
+                    <div class="modal-body">
+                           <div class="custom-form custom-form-fields">
+                                    <h3>ĐĂNG NHẬP</h3>
+                                    <p>Xin mời đăng nhập. (*) là phần không được bỏ trống.</p>
+                                    <form>
+                                            
+                                        <div class="form-group">
+                                             <input type="text" class="form-control" placeholder="Tên tài khoản(*)"  required/>
+                                             <span><i class="fa fa-user"></i></span>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                             <input type="password" class="form-control" placeholder="Mật khẩu(*)"  required/>
+                                             <span><i class="fa fa-lock"></i></span>
+                                        </div>
+                                        
+                                        <div class="checkbox">
+                                             <label><input type="checkbox"> Tôi đồng ý với điều khoản của bạn</label>
+                                        </div>
+                                        
+                                        <button class="btn btn-orange btn-block">ĐĂNG NHẬP</button>
+                                    </form>
+                                    
+                                    <div class="other-links">
+                                        <p class="link-line">Chưa có tài khoản? Ở đây? <a href="#edit-profile1">Đăng ký</a></p>
+                                        <a class="simple-link" href="#">Quên mật khẩu</a>
+                                    </div><!-- end other-links -->
+                                </div><!-- end custom-form -->
+                    </div><!-- end modal-bpdy -->
+                </div><!-- end modal-content -->
+            </div><!-- end modal-dialog -->
+        </div><!-- end edit-profile dăng nhap -->
+
+         <div id="edit-profile1" class="modal custom-modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div><!-- end modal-header -->
+                    
+                    <div class="modal-body">
+                          <div class="custom-form custom-form-fields">
+                    <h3>Trang đăng ký</h3>
+                    <p>Xin mời bạn điền vào những thành phần bên dưới. (*) là phần không được bỏ trống.</p>
+                    <form>
+
+                        <div class="form-group">
+                           <input type="text" class="form-control" placeholder="Tên tài khoản"  required/>
+                           <span><i class="fa fa-user"></i></span>
+                       </div>
+
+                       <div class="form-group">
+                           <input type="Email" class="form-control" placeholder="Email"  required/>
+                           <span><i class="fa fa-envelope"></i></span>
+                       </div>
+
+                       <div class="form-group">
+                           <input type="password" class="form-control" placeholder="Mật khẩu"  required/>
+                           <span><i class="fa fa-lock"></i></span>
+                       </div>
+
+                       <div class="form-group">
+                           <input type="password" class="form-control" placeholder="Xác nhận mật khẩu"  required/>
+                           <span><i class="fa fa-lock"></i></span>
+                       </div>
+
+                       <button class="btn btn-orange btn-block">ĐĂNG KÝ</button>
+                   </form>
+
+                   <div class="other-links">
+                       <p class="link-line">Có tài khoản chưa? <a href="#edit-profile">Đăng nhập tại đây</a></p>
+                   </div><!-- end other-links -->
+               </div><!-- end custom-form -->
+                    </div><!-- end modal-bpdy -->
+                </div><!-- end modal-content -->
+            </div><!-- end modal-dialog -->
+        </div><!-- end edit-profile dăng ký -->
+
+        <!-- Modal -->
+  <div class="modal fade" id="xacnhan" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Xác nhận đặt tour</h4>
+        </div>
+        <div class="modal-body">
+          <p>Bạn đã đặt tour thành công!</p>
+        </div>
+        <div class="modal-footer" style="display: flex; flex-direction: row; justify-content: flex-end;">
+          <button type="button" class="btn btn-block btn-orange" data-dismiss="modal" style="width: auto; "  onclick="location.href='tourNamDu.html'">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <!-- Page Scripts Starts -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/custom-navigation.js"></script>
+        <script src="js/custom-date-picker.js"></script>
+        <script src="js/custom-slick.js"></script>
+        <!-- Page Scripts Ends -->
+    </body>
+</html>

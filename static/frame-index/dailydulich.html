@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Đại lý hướng dẫn du lịch</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" href="images/favicon.png" type="image/x-icon">
+        
+        <!-- Google Fonts -->   
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i%7CMerriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+        
+        <!-- Bootstrap Stylesheet -->   
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <!-- Font Awesome Stylesheet -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+            
+        <!-- Custom Stylesheets --> 
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" id="cpswitch" href="css/orange.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        
+        <!--Jquery UI Stylesheet-->
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+    </head>
+    
+    
+   <body id="main-homepage">
+
+    <!-- nut thich -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0" nonce="4p7QJkfx"></script>
+    <!-- end nut thich -->
+        <!--====== LOADER =====-->
+     <!--    <div class="loader"></div> -->
+    
+    
+        <!--======== SEARCH-OVERLAY =========-->       
+        <div class="overlay">
+            <a href="javascript:void(0)" id="close-button" class="closebtn">&times;</a>
+            <div class="overlay-content">
+                <div class="form-center">
+                    <form>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Tìm kiếm..." required />
+                                <span class="input-group-btn"><button type="submit" class="btn"><span><i class="fa fa-search"></i></span></button></span>
+                            </div><!-- end input-group -->
+                        </div><!-- end form-group -->
+                    </form>
+                </div><!-- end form-center -->
+            </div><!-- end overlay-content -->
+        </div><!-- end overlay -->
+        
+        
+         <!--============= TOP-BAR ===========-->
+    <div id="top-bar" class="tb-text-white">
+        <div class="container">
+            <div class="row">          
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div id="info">
+                        <ul class="list-unstyled list-inline">
+                            <li><span><i class="fa fa-map-marker"></i></span>Khoa Công nghệ thông tin và truyền thông - Đại Học Đà Nẵng</li>
+                            <li><span><i class="fa fa-phone"></i></span>+0338.909.973</li>
+                        </ul>
+                    </div><!-- end info -->
+                </div><!-- end columns -->
+                
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div id="links">
+                        <ul class="list-unstyled list-inline">
+                             <li><button class="btn-default" data-toggle="modal" data-target="#edit-profile"><i class="fa fa-sign-in" aria-hidden="true"></i> Đăng Nhập</button></li>
+                            <li><button class="btn-default" data-toggle="modal" data-target="#edit-profile1"><i class="fa fa-user-circle" aria-hidden="true"></i> Đăng Ký</button></li>
+                        </ul>
+                    </div><!-- end links -->
+                </div><!-- end columns -->              
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end top-bar -->
+
+
+    <div id="edit-profile" class="modal custom-modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div><!-- end modal-header -->
+                    
+                    <div class="modal-body">
+                           <div class="custom-form custom-form-fields">
+                                    <h3>ĐĂNG NHẬP</h3>
+                                    <p>Xin mời đăng nhập. (*) là phần không được bỏ trống.</p>
+                                    <form>
+                                            
+                                        <div class="form-group">
+                                             <input type="text" class="form-control" placeholder="Tên tài khoản(*)"  required/>
+                                             <span><i class="fa fa-user"></i></span>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                             <input type="password" class="form-control" placeholder="Mật khẩu(*)"  required/>
+                                             <span><i class="fa fa-lock"></i></span>
+                                        </div>
+                                        
+                                        <div class="checkbox">
+                                             <label><input type="checkbox"> Tôi đồng ý với điều khoản của bạn</label>
+                                        </div>
+                                        
+                                        <button class="btn btn-orange btn-block">ĐĂNG NHẬP</button>
+                                    </form>
+                                    
+                                    <div class="other-links">
+                                        <p class="link-line">Chưa có tài khoản? Ở đây? <a href="#edit-profile1">Đăng ký</a></p>
+                                        <a class="simple-link" href="#">Quên mật khẩu</a>
+                                    </div><!-- end other-links -->
+                                </div><!-- end custom-form -->
+                    </div><!-- end modal-bpdy -->
+                </div><!-- end modal-content -->
+            </div><!-- end modal-dialog -->
+        </div><!-- end edit-profile dăng nhap -->
+
+         <div id="edit-profile1" class="modal custom-modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div><!-- end modal-header -->
+                    
+                    <div class="modal-body">
+                          <div class="custom-form custom-form-fields">
+                    <h3>Trang đăng ký</h3>
+                    <p>Xin mời bạn điền vào những thành phần bên dưới. (*) là phần không được bỏ trống.</p>
+                    <form>
+
+                        <div class="form-group">
+                           <input type="text" class="form-control" placeholder="Tên tài khoản"  required/>
+                           <span><i class="fa fa-user"></i></span>
+                       </div>
+
+                       <div class="form-group">
+                           <input type="Email" class="form-control" placeholder="Email"  required/>
+                           <span><i class="fa fa-envelope"></i></span>
+                       </div>
+
+                       <div class="form-group">
+                           <input type="password" class="form-control" placeholder="Mật khẩu"  required/>
+                           <span><i class="fa fa-lock"></i></span>
+                       </div>
+
+                       <div class="form-group">
+                           <input type="password" class="form-control" placeholder="Xác nhận mật khẩu"  required/>
+                           <span><i class="fa fa-lock"></i></span>
+                       </div>
+
+                       <button class="btn btn-orange btn-block">ĐĂNG NHẬP</button>
+                   </form>
+
+                   <div class="other-links">
+                       <p class="link-line">Có tài khoản chưa? <a href="#edit-profile">Đăng nhập tại đây</a></p>
+                   </div><!-- end other-links -->
+               </div><!-- end custom-form -->
+                    </div><!-- end modal-bpdy -->
+                </div><!-- end modal-content -->
+            </div><!-- end modal-dialog -->
+        </div><!-- end edit-profile dăng ký -->
+
+        
+
+  <nav class="navbar navbar-default main-navbar navbar-custom navbar-white" id="mynavbar-1">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" id="menu-button">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+              </button>
+              <div class="header-search hidden-lg">
+                <a href="javascript:void(0)" class="search-button"><span><i class="fa fa-search"></i></span></a>
+            </div>
+            <a href="index.html" class="navbar-brand"><span><i class="fa fa-plane"></i>STAR</span>TRAVELS</a>
+        </div><!-- end navbar-header -->
+        
+        <div class="collapse navbar-collapse" id="myNavbar1" color:yellow;>
+            <ul class="nav navbar-nav navbar-right navbar-search-link">
+                <li class="dropdown active" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Trang chủ<span><i class="fa fa-angle-down"></i></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Trang chủ chính</a></li>
+                        <li><a href="flight-homepage.html">Trang chủ chuyến bay</a></li>
+                        <li><a href="hotel-homepage.html">trang chủ khách sạn</a></li>
+                        <li><a href="tour-homepage.html">Trang chủ tour</a></li>
+                        <li><a href="Dashboard.html">Trang quản lí</a></li>
+                    </ul>           
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Chuyến bay<span><i class="fa fa-angle-down"></i></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="flight-homepage.html">Trang chủ chuyến bay</a></li>
+                    </ul>           
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Khách sạn<span><i class="fa fa-angle-down"></i></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="hotel-homepage.html">Trang chủ khách sạn</a></li>
+                        <li><a href="hotel-listing-left-sidebar.html">Danh sách khách sạn</a></li>
+                        <li><a href="hotel-detail-left-sidebar.html">Chi tiết Khách sạn</a></li>
+                    </ul>           
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Tours<span><i class="fa fa-angle-down"></i></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tour-homepage.html">Trang chủ tour</a></li>
+                        <li><a href="tour-listing-left-sidebar.html">Danh sách tour</a></li>
+                        <li><a href="tour-detail-left-sidebar.html">Chi tiết tour</a></li>
+                    </ul>           
+                </li>
+                <li><a href="javascript:void(0)" class="search-button"><span><i class="fa fa-search"></i></span></a></li>
+            </ul>
+        </div><!-- end navbar collapse -->
+    </div><!-- end container -->
+</nav><!-- end navbar -->
+
+<div class="sidenav-content">
+    <div id="mySidenav" class="sidenav" >
+        <h2 id="web-name"><span><i class="fa fa-plane"></i></span>DU LỊCH</h2>
+
+        <div id="main-menu">
+            <div class="closebtn">
+                <button class="btn btn-default" id="closebtn">&times;</button>
+            </div><!-- end close-btn -->
+            
+            <div class="list-group panel">
+
+                <a href="#home-links" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-home link-icon"></i></span>Trang chủ<span><i class="fa fa-chevron-down arrow"></i></span></a>
+                <div class="collapse sub-menu" id="home-links">
+                    <a href="index.html" class="list-group-item">Trang chủ chính</a>
+                    <a href="flight-homepage.html" class="list-group-item">Trang chủ chuyến bay</a>
+                    <a href="hotel-homepage.html" class="list-group-item">Trang chủ khách sạn</a>
+                    <a href="tour-homepage.html" class="list-group-item">Trang chủ tour</a>
+                </div><!-- end sub-menu -->
+                
+                <a href="#flights-links" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-plane link-icon"></i></span>Chuyến bay<span><i class="fa fa-chevron-down arrow"></i></span></a>
+                <div class="collapse sub-menu" id="flights-links">
+                    <a href="flight-homepage.html" class="list-group-item">Trang chủ chuyến bay</a>
+                </div><!-- end sub-menu -->
+                
+                <a href="#hotels-links" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-building link-icon"></i></span>Khách sạn<span><i class="fa fa-chevron-down arrow"></i></span></a>
+                <div class="collapse sub-menu" id="hotels-links">
+                    <a href="hotel-homepage.html" class="list-group-item">Trang chủ khách sạn</a>
+                    <a href="hotel-listing-left-sidebar.html" class="list-group-item">Danh sách khách sạn</a>
+                    <a href="hotel-detail-left-sidebar.html" class="list-group-item">Chi tiết khách sạn</a>
+                </div><!-- end sub-menu -->
+                
+                <a href="#tours-links" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-globe link-icon"></i></span>Tours<span><i class="fa fa-chevron-down arrow"></i></span></a>
+                <div class="collapse sub-menu" id="tours-links">
+                    <a href="tour-homepage.html" class="list-group-item">Trang chủ tour</a>
+                    <a href="tour-listing-left-sidebar.html" class="list-group-item">Danh sách tour</a>
+                    <a href="tour-detail-left-sidebar.html" class="list-group-item">Chi tiết tour</a>
+                </div><!-- end sub-menu -->
+
+                 <a href="#dashboard" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-cogs link-icon"></i></span>Trang quản lí<span><i class="fa fa-chevron-down arrow"></i></span></a>
+                 <div class="collapse sub-menu" id="dashboard">
+                    <a href="dashboard.html" class="list-group-item">Trang quản lí</a>
+                    <a href="user-profile.html" class="list-group-item">Hồ sơ</a>
+                    <a href="booking.html" class="list-group-item">Đặt trước</a>
+                </div><!-- end sub-menu -->
+                
+            </div><!-- end list-group -->
+        </div><!-- end main-menu -->
+    </div><!-- end mySidenav -->
+</div><!-- end sidenav-content -->
+
+        
+        <!--================== PAGE-COVER =================-->
+        <section class="page-cover" id="cover-tour-grid-list">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 class="page-title">Lợi ích du lịch</h1>
+                        <ul class="breadcrumb">
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li class="active">Lợi ích du lịch</li>
+                        </ul>
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end page-cover -->
+        <br><br>
+
+<div class="container">
+<div class="detail-tabs">
+        <div class="tab-content">
+
+                                    <div id="tour-information" class="tab-pane in active">
+                                        <div class="row">
+                                            <div class="col-sm-4 col-md-4 tab-img">
+                                                <img src="images/latest-blog-2.jpg" class="img-responsive" alt="flight-detail-img" />
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-sm-8 col-md-8 tab-text">
+                                                <h2>ĐẠI LÝ HƯỚNG DẪN DU LỊCH</h2>
+                                                <ol>
+                        <li>Một đại lý du lịch là gì?
+                            <ul>
+                                <li>Đại lý du lịch giúp các cá nhân, nhóm và khách du lịch kinh doanh lên kế hoạch và sắp xếp lịch trình du lịch của họ, từ mua gói tour đến đặt vé máy bay và khách sạn. Họ phải làm quen với quy trình và kỹ thuật của các chuyến bay và đặt phòng khách sạn để cung cấp thông tin cần thiết cho khách hàng của họ một cách kịp thời.</li>
+                                <li>Lên kế hoạch cho một chuyến đi là một quá trình tốn thời gian và phức tạp. Đại lý du lịch đơn giản hóa quy trình này cho khách hàng của họ ngoài việc cung cấp dịch vụ tư vấn và toàn bộ các gói du lịch. Họ có thể đặt chuyến bay, du lịch trên biển, cho thuê xe hơi và khách sạn, cũng như các kỳ nghỉ và sự kiện. Đại lý phục vụ cho một nhân khẩu học rộng, phục vụ cả cá nhân và tập đoàn. Họ cũng có thể tập trung trong một phân khúc đặc biệt ; nhiều đại lý chuyên về du lịch giải trí, các chuyến đi cụ thể theo địa điểm đến Châu Âu, Châu Phi hoặc Châu Á.</li>
+                            </ul>
+                        </li>
+                        <li>Một đại lý du lịch làm gì?
+                            <ul>
+                                <li>Trách nhiệm chính của một đại lý du lịch là làm cho quá trình lập kế hoạch du lịch dễ dàng hơn cho khách hàng của họ và đảm bảo họ trải nghiệm chuyến đi tốt nhất có thể. Đại lý du lịch làm việc trực tiếp với du khách và trò chuyện với khách hàng để xác định điểm đến du lịch tốt nhất, sắp xếp phương tiện đi lại và chỗ ở cho các nhu cầu cụ thể của khách hàng.</li>
+                                <li>Họ có thể đưa ra đề xuất cho khách hàng dựa trên kinh nghiệm của họ, hoặc cung cấp các gói du lịch hoàn chỉnh từ các khu nghỉ mát hoặc tàu du lịch khác nhau. Họ thường bị giới hạn trong một ngân sách và phải được tổ chức chặt chẽ để cung cấp cho khách hàng của họ các thỏa thuận du lịch phù hợp với cả những hạn chế về tài chính và những kỳ vọng về du lịch hoặc kinh doanh.</li>
+                                <li>Đại lý làm việc với các hãng hàng không, tàu du lịch, khu nghỉ mát và các công ty cho thuê để đảm bảo sắp xếp chuyến đi cho khách hàng của họ. Họ nghiên cứu thông tin về kế hoạch du lịch của khách hàng và chuyển tiếp thông tin quan trọng bao gồm điều kiện thời tiết, tư vấn du lịch và các tài liệu cần thiết cho điểm đến của họ.</li>
+                                <li>Đại lý du lịch làm việc quanh năm, nhưng đặc biệt bận rộn trong thời gian nghỉ hè cao điểm vào mùa hè và trong kỳ nghỉ. Trong thời gian đó, các đại lý bận rộn với các chuyến đi lập kế hoạch điện thoại và thực hiện các thay đổi hành trình vào phút cuối cho khách hàng hiện tại. Họ cũng bán các gói kỳ nghỉ từ tàu du lịch, khu nghỉ mát và các điểm đến khác.</li>
+                                <li>Trong mùa giảm giá, các đại lý du lịch đang bận rộn nghiên cứu các điểm đến và tìm hiểu về các dịch vụ mới nhất của các khu nghỉ mát và địa điểm du lịch chính. Họ cũng sẽ khám phá những điểm đến mới và tìm những chuyến đi tốt nhất cho một mục đích du lịch cụ thể, cho dù đó là liên quan đến kinh doanh hoặc để giải trí cá nhân.</li>
+                                <li>Hầu hết các cơ quan du lịch đều chuyên về một số điểm đến và loại khách du lịch. Một số cơ quan chỉ làm việc cho khách du lịch kinh doanh và có thể có các thỏa thuận đặc biệt với một số khách sạn và hãng hàng không (ví dụ: phí đặt phòng đặc biệt), trong khi một số khác chuyên về du lịch giải trí hoặc phiêu lưu và làm việc với khách hàng đang tìm kiếm một kỳ nghỉ.</li>
+                            </ul>
+                        </li>
+                        <li>Giải pháp đặt phòng đại lý khách sạn ưu việt cho đại lý du lịch
+                            <ul>
+                                <li>Ngoài việc đại lý du lịch liên hệ đặt phương tiện, lịch trình tour như thế nào, các đại lý du lịch cũng cần phải đặt phòng cho du khách phù hợp nhất. Không phải du khách nào cũng đặt phòng và số lượng phòng như thế. Chính vì vậy, đại lý du lịch cần đa dạng nguồn khách sạn để đáp ứng đầy đủ các lịch trình tour khác nhau.</li>
+                                <li>Một hệ thống dành cho các khách sạn, đại lý du lịch liên kết với nhau, tạo ra một sàn giao dịch giúp cho đại lý du lịch tìm được phòng hợp lý với tour của mình nhất.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                                            </div><!-- end columns -->
+                                        </div><!-- end row -->
+                                    </div><!-- end hotel-overview -->
+                                </div>
+                            </div>
+                        </div>
+
+
+        
+        <!--======================= BEST FEATURES =====================-->
+        <section id="best-features" class="banner-padding black-features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="b-feature-block">
+                            <span><i class="fa fa-dollar"></i></span>
+                            <h3>Đảm bảo giá tốt nhất</h3>
+                            <p>Cung cấp những ưu đãi hấp dẫn khách hàng khi lựa chọn tour.</p>
+                        </div><!-- end b-feature-block -->
+                   </div><!-- end columns -->
+                   
+                   <div class="col-sm-6 col-md-3">
+                        <div class="b-feature-block">
+                            <span><i class="fa fa-lock"></i></span>
+                            <h3>An toàn và bảo mật</h3>
+                            <p>Du Lịch Việt cam kết sẽ bảo mật những thông tin mang tính riêng tư của khách hàng, nhằm tôn trọng và bảo vệ quyền lợi của người truy cập.</p>
+                        </div><!-- end b-feature-block -->
+                   </div><!-- end columns -->
+                   
+                   <div class="col-sm-6 col-md-3">
+                        <div class="b-feature-block">
+                            <span><i class="fa fa-thumbs-up"></i></span>
+                            <h3>Đại lý du lịch tốt nhất</h3>
+                            <p>Làm cho quá trình lập kế hoạch du lịch dễ dàng hơn cho khách hàng của họ và đảm bảo họ trải nghiệm chuyến đi tốt nhất có thể.</p>
+                        </div><!-- end b-feature-block -->
+                   </div><!-- end columns -->
+                   
+                   <div class="col-sm-6 col-md-3">
+                        <div class="b-feature-block">
+                            <span><i class="fa fa-bars"></i></span>
+                            <h3>Hướng dẫn du lịch</h3>
+                            <p>Hướng dẫn viên sẽ sử dụng ngôn ngữ để giới thiệu, giải thích, hướng dẫn, giải đáp cho khách du lịch về văn hóa, lịch sử, ý nghĩa của các địa danh du lịch.</p>
+                        </div><!-- end b-feature-block -->
+                   </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end best-features -->
+
+        
+        
+        
+<!--======================= FOOTER =======================-->
+<section id="footer" class="ftr-heading-o ftr-heading-mgn-1">
+
+    <div id="footer-top" class="banner-padding ftr-top-black ftr-text-white">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-widget ftr-contact">
+                    <h3 class="footer-heading">Liên hệ chúng tôi</h3>
+                    <ul class="list-unstyled">
+                        <li><span><i class="fa fa-map-marker"></i></span>Khoa Công nghệ thông tin và truyền thông - Đại Học Đà Nẵng</li>
+                        <li><span><i class="fa fa-phone"></i></span>+0338.909.973</li>
+                        <li><span><i class="fa fa-envelope"></i></span>tranmylinh849@gmail.com</li>
+                        <li><div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div></li>
+                    </ul>
+                </div><!-- end columns -->
+
+                <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 footer-widget ftr-links">
+                    <h3 class="footer-heading">Công ty</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="flight-homepage.html">Chuyến bay</a></li>
+                        <li><a href="hotel-homepage.html">Khách sạn</a></li>
+                        <li><a href="tour-homepage.html">Tour</a></li>
+                    </ul>
+                </div><!-- end columns -->
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-widget ftr-links ftr-pad-left">
+                    <h3 class="footer-heading">Tài nguyên</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="about-us.html">Liên hệ chúng tôi</a></li>
+                        <li><a href="login.html">Đăng nhập</a></li>
+                        <li><a href="registration.html">Đăng ký</a></li>
+                        <li><a href="contact-us.html">Sơ đồ trang web</a></li>
+                    </ul>
+                </div><!-- end columns -->
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 footer-widget ftr-about">
+                    <h3 class="footer-heading">Về chúng tôi</h3>
+                    <p>Với mong muốn phục vụ ngày càng nhiều khách du lịch Việt Nam và Thế giới. Logo của chúng tôi lấy màu chủ đạo là màu vàng màu của mảnh đất mẹ Việt Nam, những con người Việt Nam hiền lành, thân thiện luôn khát khao khám phá đất nước.</p>
+                    <ul class="social-links list-inline list-unstyled">
+                        <li><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
+                        <li><a href="#"><span><i class="fa fa-google-plus"></i></span></a></li>
+                        <li><a href="#"><span><i class="fa fa-instagram"></i></span></a></li>
+                        <li><a href="#"><span><i class="fa fa-youtube-play"></i></span></a></li>
+                    </ul>
+                </div><!-- end columns -->
+
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end footer-top -->
+
+    <div id="footer-bottom" class="ftr-bot-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="copyright">
+                    <p>© 2020 <a href="#">StarTravel</a>.</p>
+                </div><!-- end columns -->
+
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="terms">
+                    <ul class="list-unstyled list-inline">
+                        <li><a href="#">Điều khoản và điều kiện</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div><!-- end columns -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end footer-bottom -->
+
+</section><!-- end footer -->
+
+ <div id="edit-profile" class="modal custom-modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div><!-- end modal-header -->
+                    
+                    <div class="modal-body">
+                           <div class="custom-form custom-form-fields">
+                                    <h3>ĐĂNG NHẬP</h3>
+                                    <p>Xin mời đăng nhập. (*) là phần không được bỏ trống.</p>
+                                    <form>
+                                            
+                                        <div class="form-group">
+                                             <input type="text" class="form-control" placeholder="Tên tài khoản(*)"  required/>
+                                             <span><i class="fa fa-user"></i></span>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                             <input type="password" class="form-control" placeholder="Mật khẩu(*)"  required/>
+                                             <span><i class="fa fa-lock"></i></span>
+                                        </div>
+                                        
+                                        <div class="checkbox">
+                                             <label><input type="checkbox"> Tôi đồng ý với điều khoản của bạn</label>
+                                        </div>
+                                        
+                                        <button class="btn btn-orange btn-block">ĐĂNG NHẬP</button>
+                                    </form>
+                                    
+                                    <div class="other-links">
+                                        <p class="link-line">Chưa có tài khoản? Ở đây? <a href="#edit-profile1">Đăng ký</a></p>
+                                        <a class="simple-link" href="#">Quên mật khẩu</a>
+                                    </div><!-- end other-links -->
+                                </div><!-- end custom-form -->
+                    </div><!-- end modal-bpdy -->
+                </div><!-- end modal-content -->
+            </div><!-- end modal-dialog -->
+        </div><!-- end edit-profile dăng nhap -->
+
+         <div id="edit-profile1" class="modal custom-modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div><!-- end modal-header -->
+                    
+                    <div class="modal-body">
+                          <div class="custom-form custom-form-fields">
+                    <h3>Trang đăng ký</h3>
+                    <p>Xin mời bạn điền vào những thành phần bên dưới. (*) là phần không được bỏ trống.</p>
+                    <form>
+
+                        <div class="form-group">
+                           <input type="text" class="form-control" placeholder="Tên tài khoản"  required/>
+                           <span><i class="fa fa-user"></i></span>
+                       </div>
+
+                       <div class="form-group">
+                           <input type="Email" class="form-control" placeholder="Email"  required/>
+                           <span><i class="fa fa-envelope"></i></span>
+                       </div>
+
+                       <div class="form-group">
+                           <input type="password" class="form-control" placeholder="Mật khẩu"  required/>
+                           <span><i class="fa fa-lock"></i></span>
+                       </div>
+
+                       <div class="form-group">
+                           <input type="password" class="form-control" placeholder="Xác nhận mật khẩu"  required/>
+                           <span><i class="fa fa-lock"></i></span>
+                       </div>
+
+                       <button class="btn btn-orange btn-block">ĐĂNG KÝ</button>
+                   </form>
+
+                   <div class="other-links">
+                       <p class="link-line">Có tài khoản chưa? <a href="#edit-profile">Đăng nhập tại đây</a></p>
+                   </div><!-- end other-links -->
+               </div><!-- end custom-form -->
+                    </div><!-- end modal-bpdy -->
+                </div><!-- end modal-content -->
+            </div><!-- end modal-dialog -->
+        </div><!-- end edit-profile dăng ký -->
+        
+        
+        <!-- Page Scripts Starts -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script> 
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/custom-navigation.js"></script>
+        <script src="js/custom-price-slider.js"></script>
+        <!-- Page Scripts Ends -->
+    </body>
+</html>

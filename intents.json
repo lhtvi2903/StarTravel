@@ -1,0 +1,449 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Xin chào",
+        "chào bạn",
+        "shop ơi",
+        "hi",
+        "Hello",
+        "hey",
+        "mình có vài câu hỏi",
+        "có ai giúp mình không",
+        "bạn ơi",
+        "anh ơi",
+        "chị ơi",
+        "cháu ơi",
+        "hello",
+        "chào",
+        "có ai ở đây không?",
+        "heyyy",
+        "hiiii",
+        "cho mình hỏi với"
+      ],
+      "responses": [
+        "Xin cảm ơn quí khách chat với Tour SunZi. Chúng tôi có thể giúp được gì cho quý khách?",
+        "Chào bạn, chúc bạn có một ngày tốt lành, tôi có thể giúp gì cho bạn",
+        "Bạn cần tôi hỗ trợ những gì?",
+        "Tôi ở đây, Tôi rất hân hạnh gặp bạn",
+        "hi bạn, bạn cần sự giứp đỡ không? Tôi luôn sắn lòng giúp bạn",
+        "Bạn cần tôi cung cấp gì những? Giúp đỡ bạn là niềm vinh dự của chúng tôi",
+        "Bạn cần trợ giúp ư!!!!",
+        "chào bạn, đã quan tâm tới dịch vụ bên tôi",
+        "xin chào, bạn cần tôi hỗ trợ những gì?",
+        "hey bạn, tôi có thể giúp bạn gì nào?",
+        "Chào bạn, bạn cần tôi giúp gì a!"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Hẹn gặp lại sau",
+        "Tạm biệt",
+        "cảm ơn sự nhiệt tình từ bạn",
+        "bai",
+        "cảm",
+        "tạm",
+        "biệt"
+      ],
+      "responses": [
+        "Tạm Biệt! Chúc ngày tốt lành",
+        "Có một ngày tốt lành",
+        "Cảm ơn bạn! Đã quan tâm đến dịch bên tôi"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "cảm ơn",
+        "Cảm ơn tư vấn",
+        "Cảm ơn bạn"
+      ],
+      "responses": [
+        "Rất vui được giúp đỡ!",
+        "Tôi luôn ở đâu!!,Bạn có thể tìm tôi bất cứ lúc nào!",
+        "Niềm vui của tôi"
+      ]
+    },
+    {
+      "tag": "service",
+      "patterns": [
+        "Cho tôi hỏi dịch vụ bạn cung cấp những gói du lịch nào?",
+        "cung cấp dịch vụ nào",
+        "cung cấp",
+        "dịch vụ",
+        "các gói du lịch",
+        "có những gói du lịch nào",
+        "gói du lịch",
+        "có những tour du lịch nào",
+        "tour du lịch"
+      ],
+      "responses": [
+        "Hiện tại chúng tôi đang cung cấp các tour như sau: Tour trong nước, Tour nước ngoài. Và Tour nổi bật của chúng tôi gồm có: Abu Dhabi, Thái Lan, Pháp, Thụy Sĩ, Ý, Anh. Bạn muốn chúng tôi tư vấn về gói nào?"
+      ]
+    },
+    {
+      "tag": "Dhabi_service",
+      "patterns": [
+        "Tối muốn hỏi về gói Abu dbabi, gói này như thế nào không?",
+        "gói abu dbabi",
+        "dịch vụ gói abu dbabi",
+        "tours abh dbabi",
+        "gói abh dbabi cung cấp dịch vụ như thế nào?",
+        "tour abh dbabi như thế nào"
+      ],
+      "responses": [
+        "Mua ngay tour du lịch TPHCM - Abu Dhabi - Dubai 2 ngày 3 đêm giá rẻ của SunZi để có ngay những trải nghiệm khó quên. ĐIỂM NỔI BẬT: 1. Check in tòa nhà chọc trời cao nhất thế giới Burj Khalifa, khách sạn 7 sao Burj Al Arab & trung tâm thương mại Dubai Mall,...2.Tham quan những địa danh đậm nét Trung Đông: cửa hàng thảm Ba Tư, chợ Spice Souk & Gold Souk,...3. Tìm hiểu văn hóa qua Bảo tàng Dubai, ngồi tàu điện trên không chiêm ngưỡng vẻ đẹp Đảo Cọ khổng lồTrải nghiệm ngồi Taxi nước truyền thống, vượt Sa mạc Safari, xem Belly Dance, cưỡi lạc đà, tiệc BBQ nơi sa mạc. 4. TẶNG vé tham quan vườn hoa lớn nhất thế giới Miracle GardenNgoạn cảnh Abu Dhabi: Ferrari World, Corniche, Thánh đường Hồi Giáo Sheikh Zayed, Dates Market, Emirates Palace,..."
+      ]
+    },
+    {
+      "tag": "France_service",
+      "patterns": [
+        "Tối muốn hỏi về gói pháp, gói này như thế nào không?",
+        "gói pháp",
+        "dịch vụ gói pháp",
+        "tours pháp",
+        "gói pháp cung cấp dịch vụ như thế nào?",
+        "tour pháp như thế nào"
+      ],
+      "responses": [
+        "Chúng tôi chuyên tổ chức các tour du lịch Pháp giá rẻ trọn gói khởi hành hành đều đặn hàng tháng với chất lượng và giá cả phải chăng. Khi tham gia chương trình du lịch Pháp của VieTourist bạn sẽ có cơ hội khám phá những địa điểm nổi bật của Pháp như thủ đô Paris, tháp Eiffel, nhà thờ Đức Bà Paris, Khải Hoàn Môn,... Ưu đãi đặc biệt cho du khách đi theo nhóm từ 3 khách trở lên hoặc đăng ký sớm. Hãy liên hệ với đội ngũ nhân viên giàu kinh nghiệm và nhiệt tình của chúng tôi để có những tư vấn chi tiết nhất về tour du lịch Pháp."
+      ]
+    },
+    {
+      "tag": "Thailand_service",
+      "patterns": [
+        "Tối muốn hỏi về gói Thái Lan, gói này như thế nào không?",
+        "gói Thái Lan",
+        "dịch vụ gói Thái Lan",
+        "tours Thái Lan",
+        "gói Thái Lan cung cấp dịch vụ như thế nào?",
+        "tour Thái Lan như thế nào"
+      ],
+      "responses": [
+        "Tour Thái Lan 2 ngày 3 đêm khởi hành từ Cần Thơ khám phá Thái Lan, Bangbok, Pattaya sẽ đưa quý khách có những trải nghiệm tuyệt vời tại “Xứ sở Chùa Vàng”. Du lịch Nụ Cười Mê Kông hân hạnh được đồng hành cùng quý khách. Khám phá Thành phố biển Pattaya. Vườn thú Khao Kheow. Đảo Koh Larn (Đảo Coral). Công viên Thực vật Nong Nooch. Trân Bảo Phật Sơn – Khao Cheechan Núi Phật vàng. Trung tâm nghiên cứu và khai thác mật ong Big Bee. Dùng bữa trưa tại Nhà hàng buffet 86 tầng – Baiyoke Sky. Viếng thăm Chùa Phật Vàng. Dạo thuyền trên dòng sông Chao Phraya tuyệt đẹp. Tham quan Chợ nổi Amphaw"
+      ]
+    },
+    {
+      "tag": "Switzerland_service",
+      "patterns": [
+        "Tối muốn hỏi về gói Thuỵ Sĩ, gói này như thế nào không?",
+        "gói Thuỵ Sĩ",
+        "dịch vụ gói Thuỵ Sĩ",
+        "tours Thuỵ Sĩ",
+        "gói Thuỵ Sĩ cung cấp dịch vụ như thế nào?",
+        "tour Thuỵ Sĩ như thế nào"
+      ],
+      "responses": [
+        "Tour Thuỵ Sĩ 2 ngày 3 đêm khởi hành từ Cần Thơ khám phá Thái Lan, Bangbok, Pattaya sẽ đưa quý khách có những trải nghiệm tuyệt vời tại “Xứ sở Chùa Vàng”. Du lịch Nụ Cười Mê Kông hân hạnh được đồng hành cùng quý khách. Khám phá Thành phố biển Pattaya. Vườn thú Khao Kheow. Đảo Koh Larn (Đảo Coral). Công viên Thực vật Nong Nooch. Trân Bảo Phật Sơn – Khao Cheechan Núi Phật vàng. Trung tâm nghiên cứu và khai thác mật ong Big Bee. Dùng bữa trưa tại Nhà hàng buffet 86 tầng – Baiyoke Sky. Viếng thăm Chùa Phật Vàng. Dạo thuyền trên dòng sông Chao Phraya tuyệt đẹp. Tham quan Chợ nổi Amphaw"
+      ]
+    },
+    {
+      "tag": "Italy_service",
+      "patterns": [
+        "Tối muốn hỏi về gói ý, gói này như thế nào không?",
+        "gói ý",
+        "dịch vụ gói ý",
+        "tours ý",
+        "gói ý cung cấp dịch vụ như thế nào?",
+        "tour ý như thế nào"
+      ],
+      "responses": [
+        "Tour Ý 2 ngày 3 đêm khởi hành từ Cần Thơ khám phá Thái Lan, Bangbok, Pattaya sẽ đưa quý khách có những trải nghiệm tuyệt vời tại “Xứ sở Chùa Vàng”. Du lịch Nụ Cười Mê Kông hân hạnh được đồng hành cùng quý khách. Khám phá Thành phố biển Pattaya. Vườn thú Khao Kheow. Đảo Koh Larn (Đảo Coral). Công viên Thực vật Nong Nooch. Trân Bảo Phật Sơn – Khao Cheechan Núi Phật vàng. Trung tâm nghiên cứu và khai thác mật ong Big Bee. Dùng bữa trưa tại Nhà hàng buffet 86 tầng – Baiyoke Sky. Viếng thăm Chùa Phật Vàng. Dạo thuyền trên dòng sông Chao Phraya tuyệt đẹp. Tham quan Chợ nổi Amphaw"
+      ]
+    },
+    {
+      "tag": "England_service",
+      "patterns": [
+        "Tối muốn hỏi về gói Anh, gói này như thế nào không?",
+        "gói Anh",
+        "dịch vụ gói Anh",
+        "tours Anh",
+        "mua gói anh",
+        "gói Anh cung cấp dịch vụ như thế nào?",
+        "tour Anh như thế nào"
+      ],
+      "responses": [
+        "Tour Anh 2 ngày 3 đêm khởi hành từ Cần Thơ khám phá Thái Lan, Bangbok, Pattaya sẽ đưa quý khách có những trải nghiệm tuyệt vời tại “Xứ sở Chùa Vàng”. Du lịch Nụ Cười Mê Kông hân hạnh được đồng hành cùng quý khách. Khám phá Thành phố biển Pattaya. Vườn thú Khao Kheow. Đảo Koh Larn (Đảo Coral). Công viên Thực vật Nong Nooch. Trân Bảo Phật Sơn – Khao Cheechan Núi Phật vàng. Trung tâm nghiên cứu và khai thác mật ong Big Bee. Dùng bữa trưa tại Nhà hàng buffet 86 tầng – Baiyoke Sky. Viếng thăm Chùa Phật Vàng. Dạo thuyền trên dòng sông Chao Phraya tuyệt đẹp. Tham quan Chợ nổi Amphaw"
+      ]
+    },
+    {
+      "tag": "cost",
+      "patterns": [
+        "chi phí của các gói du lịch được thanh toán như thế nào?",
+        "thanh toán như thế nào?",
+        "chi phí gói du lịch?",
+        "thanh toán",
+        "chi phí"
+      ],
+      "responses": [
+        "Chi phí của từng gói du lịch, chúng tôi đã cung cấp trên trang web. Bạn có thể làm theo hướng dẫn của trang web. Cảm ơn bạn đã quan tâm đến dịch vụ chúng tôi. Xin chân thành cảm ơn!"
+      ]
+    },
+    {
+      "tag": "dangky_tours",
+      "patterns": [
+        "Tôi có thể đăng ký tour trước khoảng bao lâu?",
+        "đăng ký tour du lịch",
+        "đăng ký gói du lịch khoảng bao lâu?",
+        "đăng ký gói",
+        "đặt gói du lịch",
+        "đặt tours du lịch bao lâu",
+        "đặt tour như thế"
+      ],
+      "responses": [
+        "Các gói tour du lịch chúng tôi cập trên web. Nhấn vào đặt ngay và làm theo hướng dẫn của trang web chúng tôi. Quý khách nên mua tour càng sớm càng tốt vì các tour được bán trên hệ thống chi nhánh cả nước."
+      ]
+    },
+    {
+      "tag": "cho_ngoi",
+      "patterns": [
+        "Khi mua tour tôi có chọn được chỗ ngồi không?",
+        "tôi muốn hỏi tôi có thể tự chọn chỗ ngồi không?",
+        "chỗ ngồi như thế nào",
+        "chỗ ngôig sắp xếp như thế nào?",
+        "chỗ ngồi tuỳ thích?",
+        "chỗ ngồi",
+        "tự chọn chỗ ngồi khi đi"
+      ],
+      "responses": [
+        "Do các tour được bán vé bằng hệ thống tự động nên không chọn được chỗ ngồi. Ai mua sớm sẽ ngồi phía trước trên xe."
+      ]
+    },
+    {
+      "tag": "anchay_tours",
+      "patterns": [
+        "Tôi ăn chay thì đi tour ăn uống thế nào?",
+        "ăn chay thì đi tour như thế nào?",
+        "ăn chay đi như thế nào",
+        "ăn chay tour có hỗ trợ không?",
+        "ăn chay",
+        "tôi ăn chay đi được không?",
+        "ăn chay như thế nào?",
+        "ăn chay có hỗ trợ không?",
+        "tour ăn uống thế nào?",
+        "tour có phục vụ ăn chay không?"
+      ],
+      "responses": [
+        "Dịch vụ bên chúng tôi có chuẩn bị suất ăn chay cho quý khách hoặc sẽ trừ lại chi phí các bữa ăn tương ứng để quý khách tự túc ăn ạ. Ngoài ra, khi mua tour nếu quý khách có nhu cầu đặc biệt về thức ăn thì khi mua tour vui lòng báo trước với nhân viên để có thể tư vấn phương án tốt nhất (ví dụ: dị ứng hải sản, đậu phộng)"
+      ]
+    },
+    {
+      "tag": "khongan_tours",
+      "patterns": [
+        "Khi đi tour nhưng tôi không muốn ăn cùng đoàn thì có được không?",
+        "tôi không muốn ăn cùng đoàn thì có được không?",
+        "không muốn ăn cùng đoàn thì có được không?",
+        "không ăn cùng đoàn thì có được không?",
+        "không ăn cùng tour",
+        "tôi muốn ăn riêng được không?",
+        "tôi không ăn cùng tour",
+        "tôi không muốn ăn cùng đoàn được không?",
+        "tôi đi ăn riêng được không?",
+        "tôi không ăn chung với tours"
+      ],
+      "responses": [
+        "Quý khách có thể tự túc ăn, Tours SunZi sẽ trừ chi phí các bữa ăn tương ứng mà quý khách không dùng. Vui lòng báo cho nhân viên của Tours SunZi trước để tiện sắp xếp."
+      ]
+    },
+    {
+      "tag": "xelan_tours",
+      "patterns": [
+        "Có người lớn tuổi đi đứng bất tiện hay đi xe lăn thì có đi tour được không?",
+        "Có người lớn tuổi đi đứng bất tiện có đi tour được không?",
+        "đi xe lăn thì có đi tour được không?",
+        "người lớn tuổi đi đứng bất tiện",
+        "đi xe lăn",
+        "người lớn tuổi đi có được đi không?",
+        "người đi xe lăn có được đi không?"
+      ],
+      "responses": [
+        "Được. Với quý khách đi đứng bất tiện thì nên chuẩn bị xe lăn và phải có người nhà đi theo để đẩy xe. Với các tour đường bay thì xe lăn sẽ được gửi lên máy bay cùng với hành lý ký gửi."
+      ]
+    },
+    {
+      "tag": "thaydoi_tours",
+      "patterns": [
+        "Sau khi mua tour thì tôi có thể thay đổi được không?",
+        "mua tour thì tôi có thể thay đổi được không?",
+        "tôi có thể thay đổi được không?",
+        "mua tour",
+        "khi đặt tour thì tôi có thể thay đổi được không?",
+        "tôi có thể thay đổi tour được không?"
+      ],
+      "responses": [
+        "Với các tour thường quý khách chuyển đổi tour sang ngày khác và báo trước ngày khởi hành trước 7 ngày sẽ không chịu phí. Với các tour ngày lễ Tết quý khách chuyển đổi tour sang ngày khác và báo trước ngày khởi hành trước 15 ngày sẽ không chịu phí. Với các tour khuyến mãi quý khách không được phép chuyển đổi sang tour khác, ngày khác."
+      ]
+    },
+    {
+      "tag": "checkin_tours",
+      "patterns": [
+        "Khi đi tour, tôi phải có mặt ở sân bay trước bao lâu?",
+        "tôi phải có mặt ở sân bay trước bao lâu?",
+        "ở sân bay trước bao lâu?",
+        "tôi phải đến sân bay trước bao lâu?",
+        "tôi phải đến đoàn tour bao lâu?",
+        "có mặt sân bay?",
+        "sân bay",
+        "có mặt ở sân bay"
+      ],
+      "responses": [
+        "Với các tour thường quý khách có mặt tại sân bay trước giờ bay 2 tiếng, với các tour ngày lễ tết quý khách vui lòng có mặt tại sân bay trước giờ bay 3 tiếng."
+      ]
+    },
+    {
+      "tag": "thamquan_tours",
+      "patterns": [
+        "Khi đi tour, có một số nơi tôi không muốn tham quan thì có ở lại khách sạn được không?",
+        "có một số nơi tôi không muốn tham quan thì có ở lại khách sạn được không?",
+        "tôi không muốn tham quan thì có ở lại khách sạn được không?",
+        "trong tour có nơi tôi không muốn đi, tôi ở lại khách sạn được không?",
+        "không muốn tham quan thì có ở lại khách sạn được không?",
+        "ở lại khách sạn được không?",
+        "Trong lịch trình tours, có nơi không muốn đi?"
+      ],
+      "responses": [
+        "Trong quá trình đi tour, nếu có một số điểm quý khách không muốn đi tham quan vui lòng trao đổi trước với hướng dẫn viên của Tours SunZi ạ."
+      ]
+    },
+    {
+      "tag": "giayto_tours",
+      "patterns": [
+        "Khi đi tour, trẻ em cần mang theo giấy tờ gì?",
+        "trẻ em cần mang theo giấy tờ gì?",
+        "trẻ em đem theo giấy tờ gì?",
+        "trẻ em giấy tờ?",
+        "trẻ em cần mang",
+        "thủ tục cho trẻ em?",
+        "trẻ em cần giấy gì?"
+      ],
+      "responses": [
+        "Trẻ em dưới 14 tuổi cần mang theo hộ chiếu (bản chính) hoặc giấy khai sinh (bản chính). Trẻ em cần đi kèm người lớn và không cần giấy ủy quyền."
+      ]
+    },
+    {
+      "tag": "tremem14_tours",
+      "patterns": [
+        "Trẻ đã đủ 14 tuổi nhưng chưa có giấy khai sinh thì có đi tour máy bay được không?",
+        "Trẻ đã đủ 14 tuổi",
+        "chưa có giấy khai sinh thì có đi tour máy bay được không?",
+        "chưa có giấy khai sinh",
+        "trẻ em 14 tuổi không có giấy khai sinh có đi máy bay được không?",
+        "không có giấy khai sinh có đi máy bay được không?"
+      ],
+      "responses": [
+        "Nếu trẻ em đã đủ 14 tuổi mà chưa có giấy khai sinh thì có thể dùng hộ chiếu để đi tour."
+      ]
+    },
+    {
+      "tag": "muaghetreem_tours",
+      "patterns": [
+        "Tôi muốn mua ghế riêng cho trẻ em đi kèm được không?",
+        "mua ghế riêng cho trẻ em",
+        "mua ghế riêng cho trẻ em đi kèm được không?",
+        "đặt ghế cho trẻ em",
+        "đặt ghế cho trẻ em như thế nào?"
+      ],
+      "responses": [
+        "Quý khách có thể mua ghê ngồi riêng cho bé. Chi phí chỗ ngồi này sẽ tùy thuộc vào từng tour."
+      ]
+    },
+    {
+      "tag": "treemkhongdi_tours",
+      "patterns": [
+        "Khi đi tour trẻ em không đi cùng cha mẹ có được không?",
+        "trẻ em không đi cùng cha mẹ có được không?",
+        "trẻ em có thể đi một mình được không?",
+        "trẻ em có được đi không?",
+        "trẻ em không đi",
+        "đi cùng cha mẹ có được không?"
+      ],
+      "responses": [
+        "Khi đi tour trẻ em có thể không đi cùng cha mẹ nhưng phải có người thân đi cùng (ông, bà, …)"
+      ]
+    },
+    {
+      "tag": "phuthu_tours",
+      "patterns": [
+        "Phụ thu phòng đơn là gì?",
+        "Phụ thu phòng đơn",
+        "Phụ thu",
+        "phòng đơn",
+        "Phụ thu phòng đơn là cái gì?"
+      ],
+      "responses": [
+        "Là chi phí phụ thu của quý khách ngủ 1 mình 1 phòng trong các trường hợp là khách đi tour 1 mình hoặc không có người ngủ ghép chung phòng với  quý khách đi 1 mình hoặc trường hợp 1 người lớn đi kèm với 2 bé dưới 11 tuổi."
+      ]
+    },
+    {
+      "tag": "chonkhachsan_tours",
+      "patterns": [
+        "Tôi có thể lựa chọn khách sạn theo ý của mình không?",
+        "chọn khách sạn theo ý của mình không?",
+        "lựa chọn khách sạn",
+        "chọn khách sạn tuỳ thích được không?",
+        "Lựa chọn khách sạn tuỳ thích không?"
+      ],
+      "responses": [
+        "Quý khách có thể ở khách sạn khác khách sạn mà Tours SunZi đã đặt cho tour nhưng có thể sẽ phát sinh chi phí do chênh lệch giá giữa các khách sạn."
+      ]
+    },
+    {
+      "tag": "thuyetminh_tours",
+      "patterns": [
+        "Tôi có thể yêu cầu hướng dẫn viên nói thuyết minh bằng tiếng nước ngoài không?",
+        "yêu cầu hướng dẫn viên",
+        "yêu cầu hướng dẫn viên nói thuyết minh bằng tiếng nước ngoài không?",
+        "hướng dẫn viên nói tiếng nước ngoài không?",
+        "hướng dẫn viên có thể nói tiếng anh không?",
+        "Tôi là người ngoại quốc, hướng dẫn viên có thể nói tiếng anh không?"
+      ],
+      "responses": [
+        "Vì là tour đi ghép chung với những khách khác nên hướng dẫn viên chỉ nói tiếng Việt. Do đó, khi quý khách là người nước ngoài đi tour ghép chung với những khách khác thì nên đi chung với người nhà là người Việt Nam hay Việt Kiều."
+      ]
+    },
+    {
+      "tag": "bill_tours",
+      "patterns": [
+        "Khi mua tour có được xuất hóa đơn thanh toán không?",
+        "Khi đặt tour có được xuất hóa đơn thanh toán không?",
+        "có được xuất hóa đơn thanh toán không?",
+        "hoá đơn khi đặt tour?",
+        "hoá đơn"
+      ],
+      "responses": [
+        "Giá tour đã bao gồm chi phí xuất hóa đơn. Khi đặt tour hoá đơn sẽ được qua gmail bạn đã đăng ký trên web. Và chúng tôi liên hệ với bạn để xác nhận đơn hàng. Cảm ơn quý khách."
+      ]
+    },
+    {
+      "tag": "chiphi_tours",
+      "patterns": [
+        "Có chi phí phát sinh không?",
+        "chi phí phát sinh",
+        "chi phí",
+        "chi phí thêm"
+      ],
+      "responses": [
+        "Tất cả chi phí bênh dịch vụ chịu trách nhiệm. Bạn có thể chuẩn bị mua quà lưu niệm cho người thân"
+      ]
+    },
+    {
+      "tag": "luuy_tours",
+      "patterns": [
+        "Tôi cần lưu ý những gì khi tham gia tour không?",
+        "Tôi cần lưu ý gì khi đi tour không?",
+        "lưu ý những gì khi tham gia tour không?",
+        "lưu ý đi tour",
+        "những lưu ý khi đi tour",
+        "cần lưu ý gì khi đi",
+        "mẹo nhỏ khi đi"
+      ],
+      "responses": [
+        "Hiểu rõ về quy định và điều lệ đi kèm trong mỗi tour du lịch. Làm bạn với hướng dẫn viên. Đề phòng bị lạc khi tách đoàn. Chú ý thời gian tham quan điểm đến. Và đặt biệt lưu số hướng dẫn viên để có thể giúp bạn mọi lúc. Cảm ơn quý khách đã lựa chọn dịch vụ bên tôi!"
+      ]
+    }
+  ]
+}

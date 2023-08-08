@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Phòng sang trọng</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" href="images/favicon.png" type="image/x-icon">
+        
+        <!-- Google Fonts -->	
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i%7CMerriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+        
+        <!-- Bootstrap Stylesheet -->	
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <!-- Font Awesome Stylesheet -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+            
+        <!-- Custom Stylesheets -->	
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" id="cpswitch" href="css/orange.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        
+        <!--Date-Picker Stylesheet-->
+        <link rel="stylesheet" href="css/datepicker.css">
+        
+        <!-- Slick Stylesheet -->
+		<link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/slick-theme.css">
+    </head>
+    
+    
+   <body id="main-homepage">
+
+    <!-- nut thich -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0" nonce="4p7QJkfx"></script>
+    <!-- end nut thich -->
+
+    <!-- comment -->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0" nonce="xT4XudaW"></script>
+        <!-- end comment -->
+    
+    
+        <!--====== LOADER =====-->
+        <div class="loader"></div>
+    
+    
+    	<!--======== SEARCH-OVERLAY =========-->       
+        <div class="overlay">
+            <a href="javascript:void(0)" id="close-button" class="closebtn">&times;</a>
+            <div class="overlay-content">
+                <div class="form-center">
+                    <form>
+                    	<div class="form-group">
+                        	<div class="input-group">
+                        		<input type="text" class="form-control" placeholder="Search..." required />
+                            	<span class="input-group-btn"><button type="submit" class="btn"><span><i class="fa fa-search"></i></span></button></span>
+                            </div><!-- end input-group -->
+                        </div><!-- end form-group -->
+                    </form>
+                </div><!-- end form-center -->
+            </div><!-- end overlay-content -->
+        </div><!-- end overlay -->
+        
+        
+         <!--============= TOP-BAR ===========-->
+    <div id="top-bar" class="tb-text-white">
+        <div class="container">
+            <div class="row">          
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div id="info">
+                        <ul class="list-unstyled list-inline">
+                            <li><span><i class="fa fa-map-marker"></i></span>Khoa Công nghệ thông tin và truyền thông - Đại Học Đà Nẵng</li>
+                            <li><span><i class="fa fa-phone"></i></span>+0338.909.973</li>
+                        </ul>
+                    </div><!-- end info -->
+                </div><!-- end columns -->
+                
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div id="links">
+                        <ul class="list-unstyled list-inline">
+                             <li><button class="btn-default" data-toggle="modal" data-target="#edit-profile"><i class="fa fa-sign-in" aria-hidden="true"></i> Đăng Nhập</button></li>
+                            <li><button class="btn-default" data-toggle="modal" data-target="#edit-profile1"><i class="fa fa-user-circle" aria-hidden="true"></i> Đăng Ký</button></li>
+                        </ul>
+                    </div><!-- end links -->
+                </div><!-- end columns -->              
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end top-bar -->
+          <nav class="navbar navbar-default main-navbar navbar-custom navbar-white" id="mynavbar-1">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" id="menu-button">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+              </button>
+              <div class="header-search hidden-lg">
+                <a href="javascript:void(0)" class="search-button"><span><i class="fa fa-search"></i></span></a>
+            </div>
+            <a href="index.html" class="navbar-brand"><span><i class="fa fa-plane"></i>STAR</span>TRAVELS</a>
+        </div><!-- end navbar-header -->
+        
+        <div class="collapse navbar-collapse" id="myNavbar1" color:yellow;>
+            <ul class="nav navbar-nav navbar-right navbar-search-link">
+                <li class="dropdown" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Trang chủ<span><i class="fa fa-angle-down"></i></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Trang chủ chính</a></li>
+                        <li><a href="flight-homepage.html">Trang chủ chuyến bay</a></li>
+                        <li><a href="hotel-homepage.html">trang chủ khách sạn</a></li>
+                        <li><a href="tour-homepage.html">Trang chủ tour</a></li>
+                        <li><a href="dashboard.html">Trang quản lí</a></li>
+                    </ul>           
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Chuyến bay<span><i class="fa fa-angle-down"></i></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="flight-homepage.html">Trang chủ chuyến bay</a></li>
+                    </ul>           
+                </li>
+                <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Khách sạn<span><i class="fa fa-angle-down"></i></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="hotel-homepage.html">Trang chủ khách sạn</a></li>
+                        <li><a href="hotel-listing-left-sidebar.html">Danh sách khách sạn</a></li>
+                        <li><a href="hotel-detail-left-sidebar.html">Chi tiết Khách sạn</a></li>
+                    </ul>           
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Tours<span><i class="fa fa-angle-down"></i></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tour-homepage.html">Trang chủ tour</a></li>
+                        <li><a href="tour-listing-left-sidebar.html">Danh sách tour</a></li>
+                        <li><a href="tour-detail-left-sidebar.html">Chi tiết tour</a></li>
+                    </ul>           
+                </li>
+                <li><a href="javascript:void(0)" class="search-button"><span><i class="fa fa-search"></i></span></a></li>
+            </ul>
+        </div><!-- end navbar collapse -->
+    </div><!-- end container -->
+</nav><!-- end navbar -->
+
+<div class="sidenav-content">
+    <div id="mySidenav" class="sidenav" >
+        <h2 id="web-name"><span><i class="fa fa-plane"></i></span>DU LỊCH</h2>
+
+        <div id="main-menu">
+            <div class="closebtn">
+                <button class="btn btn-default" id="closebtn">&times;</button>
+            </div><!-- end close-btn -->
+            
+            <div class="list-group panel">
+
+                <a href="#home-links" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-home link-icon"></i></span>Trang chủ<span><i class="fa fa-chevron-down arrow"></i></span></a>
+                <div class="collapse sub-menu" id="home-links">
+                    <a href="index.html" class="list-group-item">Trang chủ chính</a>
+                    <a href="flight-homepage.html" class="list-group-item">Trang chủ chuyến bay</a>
+                    <a href="hotel-homepage.html" class="list-group-item">Trang chủ khách sạn</a>
+                    <a href="tour-homepage.html" class="list-group-item">Trang chủ tour</a>
+                </div><!-- end sub-menu -->
+                
+                <a href="#flights-links" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-plane link-icon"></i></span>Chuyến bay<span><i class="fa fa-chevron-down arrow"></i></span></a>
+                <div class="collapse sub-menu" id="flights-links">
+                    <a href="flight-homepage.html" class="list-group-item">Trang chủ chuyến bay</a>
+                </div><!-- end sub-menu -->
+                
+                <a href="#hotels-links" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-building link-icon"></i></span>Khách sạn<span><i class="fa fa-chevron-down arrow"></i></span></a>
+                <div class="collapse sub-menu" id="hotels-links">
+                    <a href="hotel-homepage.html" class="list-group-item">Trang chủ khách sạn</a>
+                    <a href="hotel-listing-left-sidebar.html" class="list-group-item">Danh sách khách sạn</a>
+                    <a href="hotel-detail-left-sidebar.html" class="list-group-item">Chi tiết khách sạn</a>
+                </div><!-- end sub-menu -->
+                
+                <a href="#tours-links" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-globe link-icon"></i></span>Tours<span><i class="fa fa-chevron-down arrow"></i></span></a>
+                <div class="collapse sub-menu" id="tours-links">
+                    <a href="tour-homepage.html" class="list-group-item">Trang chủ tour</a>
+                    <a href="tour-listing-left-sidebar.html" class="list-group-item">Danh sách tour</a>
+                    <a href="tour-detail-left-sidebar.html" class="list-group-item">Chi tiết tour</a>
+                </div><!-- end sub-menu -->
+
+                 <a href="#dashboard" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-cogs link-icon"></i></span>Trang quản lí<span><i class="fa fa-chevron-down arrow"></i></span></a>
+                 <div class="collapse sub-menu" id="dashboard">
+                    <a href="dashboard.html" class="list-group-item">Trang quản lí</a>
+                    <a href="user-profile.html" class="list-group-item">Hồ sơ</a>
+                    <a href="booking.html" class="list-group-item">Đặt trước</a>
+                </div><!-- end sub-menu -->
+                
+            </div><!-- end list-group -->
+        </div><!-- end main-menu -->
+    </div><!-- end mySidenav -->
+</div><!-- end sidenav-content -->
+
+        
+        <!--================== PAGE-COVER ===============-->
+        <section class="page-cover" id="cover-hotel-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                    	<h1 class="page-title">Phòng sang trọng</h1>
+                        <ul class="breadcrumb">
+                            <li><a href="hotel-homepage.html">Trang chủ</a></li>
+                            <li class="active">Phòng sang trọng</li>
+                        </ul>
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end page-cover -->
+        
+        
+        <!--===== INNERPAGE-WRAPPER ====-->
+        <section class="innerpage-wrapper">
+        	<div id="hotel-details" class="innerpage-section-padding">
+                <div class="container">
+                    <div class="row">        	
+                        
+                        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 content-side">
+                            
+                            <div class="detail-slider">
+                                <div class="feature-slider">
+                                    <div><img src="images/h-feature-1.jpg" class="img-responsive" alt="feature-img"/></div>
+                                    <div><img src="images/h-feature-2.jpg" class="img-responsive" alt="feature-img"/></div>
+                                    <div><img src="images/h-feature-3.jpg" class="img-responsive" alt="feature-img"/></div>
+                                    <div><img src="images/h-feature-4.jpg" class="img-responsive" alt="feature-img"/></div>
+                                    <div><img src="images/h-feature-5.jpg" class="img-responsive" alt="feature-img"/></div>
+                                </div><!-- end feature-slider -->
+                            	
+                                <div class="feature-slider-nav">
+                                    <div><img src="images/h-feature-thumb-1.jpg" class="img-responsive" alt="feature-thumb"/></div>
+                                    <div><img src="images/h-feature-thumb-2.jpg" class="img-responsive" alt="feature-thumb"/></div>
+                                    <div><img src="images/h-feature-thumb-3.jpg" class="img-responsive" alt="feature-thumb"/></div>
+                                    <div><img src="images/h-feature-thumb-4.jpg" class="img-responsive" alt="feature-thumb"/></div>
+                                    <div><img src="images/h-feature-thumb-5.jpg" class="img-responsive" alt="feature-thumb"/></div>
+                                </div><!-- end feature-slider-nav -->
+                            </div>  <!-- end detail-slider -->
+
+                            <div class="detail-tabs">
+                                <ul class="nav nav-tabs nav-justified">
+                                    <li class="active"><a href="#hotel-overview" data-toggle="tab">TỔNG QUAN VỀ KHÁCH SẠN</a></li>
+                                    <li><a href="#restaurant" data-toggle="tab">Nhà hàng</a></li>
+                                    <li><a href="#pick-up" data-toggle="tab">Dịch vụ</a></li>
+                                    <li><a href="#luxury-gym" data-toggle="tab">Phòng tập gym</a></li>
+                                    <li><a href="#sports-club" data-toggle="tab">Câu lạc bộ thể thao</a></li>
+                                </ul>
+                            	
+                                <div class="tab-content">
+
+                                    <div id="hotel-overview" class="tab-pane in active">
+                                        <div class="row">
+                                            <div class="col-sm-4 col-md-4 tab-img">
+                                                <img src="images/hotel-detail-tab-1.jpg" class="img-responsive" alt="flight-detail-img" />
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-sm-8 col-md-8 tab-text">
+                                                <h3>TỔNG QUAN VỀ KHÁCH SẠN</h3>
+                                                <ul>
+                                                    <li>Mang trong mình vẻ đẹp huyền bí và những nét văn hóa độc đáo khách sạn mà tour mang lại là điểm đến lý tưởng để du khách có một kỳ nghỉ thư giãn, thoải mái cùng với dịch vụ đẳng cấp và những lựa chọn ăn uống tuyệt vời. Dù bạn ở đây với mục đích gì, chúng tôi sẽ mang đến cho bạn một kỳ nghỉ thật sự đáng nhớ.</li>
+                                                    <li>Các phòng nghỉ lắp máy điều hòa tại đây có sàn gỗ và đồ nội thất bằng gỗ, đồng thời được trang bị TV truyền hình cáp màn hình phẳng, minibar với nước đóng chai miễn phí, tiện nghi pha trà/cà phê và phòng tắm riêng. Một số phòng còn có ban công riêng và két an toàn. Nhà hàng tại khách sạn cung cấp nhiều lựa chọn ăn uống với tiệc tự chọn quốc tế gồm các món ăn Phương Tây và Việt Nam. Hanoi Chic Hotel còn có các tiện nghi như bàn đặt tour, nơi tổ chức những chuyến du ngoạn đến các điểm tham quan địa phương.</li>
+                                                    <li>Đây là khu vực ở Hà Nội mà khách yêu thích, theo các đánh giá độc lập.</li>
+                                                </ul>
+                                                
+                                            </div><!-- end columns -->
+                                        </div><!-- end row -->
+                                    </div><!-- end hotel-overview -->
+                                    
+                                    <div id="restaurant" class="tab-pane">
+                                        <div class="row">
+                                            <div class="col-sm-4 col-md-4 tab-img">
+                                                <img src="images/hotel-detail-tab-2.jpg" class="img-responsive" alt="flight-detail-img" />
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-sm-8 col-md-8 tab-text">
+                                                <h3>NHÀ HÀNG</h3>
+                                                <p>Nhà hàng là một cơ sở kinh doanh trực thuộc khách sạn hoặc kinh doanh độc lập, chuyên cung cấp các sản phẩm ăn uống và một số dịch vụ khác nhằm phục vụ nhu cầu của nhiều đối tượng khách hàng khác nhau. Không chỉ có đồ ăn, thức uống, sản phẩm của nhà hàng còn bao gồm rất nhiều những thứ khác.</p>
+                                            </div><!-- end columns -->
+                                        </div><!-- end row -->
+                                    </div><!-- end restaurant -->
+                                    
+                                    <div id="pick-up" class="tab-pane">
+                                        <div class="row">
+                                            <div class="col-sm-4 col-md-4 tab-img">
+                                                <img src="images/hotel-detail-tab-3.jpg" class="img-responsive" alt="flight-detail-img" />
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-sm-8 col-md-8 tab-text">
+                                                <h3>Dịch vụ</h3>
+                                                <p>- Nhà hàng<br>- Quầy bar<br>- Cafe<br>- Dịch vụ spa<br>- Dịch vụ phòng họp<br>- Dịch vụ giặt, ủi là<br>- Dịch vụ phòng 24/ 24</p>
+                                            </div><!-- end columns -->
+                                        </div><!-- end row -->
+                                    </div><!-- end pick-up -->
+                                    
+                                    <div id="luxury-gym" class="tab-pane">
+                                        <div class="row">
+                                            <div class="col-sm-4 col-md-4 tab-img">
+                                                <img src="images/hotel-detail-tab-4.jpg" class="img-responsive" alt="flight-detail-img" />
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-sm-8 col-md-8 tab-text">
+                                                <h3>PHÒNG TẬP GYM SANG TRỌNG</h3>
+                                                <p>Điều đó sẽ mang lại cảm giác tuyệt vời và cảm giác không mệt mỏi ngay cả khi tập luyện liên tục với cường độ mạnh. Du khách có thể tìm thấy mọi thiết bị thể thao cần thiết tại phòng tập gym trong khách sạn. Sự tích hợp phòng tập thể dục cùng với quầy bar tự phục vụ cho phép du khách vừa tập các bài tập rèn luyện sức khỏe vừa cùng bạn bè thư giãn, nghỉ ngơi.</p>
+                                            </div><!-- end columns -->
+                                        </div><!-- end row -->
+                                    </div><!-- end luxury-gym -->
+                                    
+                                    <div id="sports-club" class="tab-pane">
+                                        <div class="row">
+                                            <div class="col-sm-4 col-md-4 tab-img">
+                                                <img src="images/hotel-detail-tab-5.jpg" class="img-responsive" alt="flight-detail-img" />
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-sm-8 col-md-8 tab-text">
+                                                <h3>Câu lạc bộ thể thao</h3>
+                                                <p>Là sự hòa trộn giữa nét thanh bình yên tĩnh của vùng nông thôn và sự phồn hoa hiện đại của thành thị. Với vẻ đẹp cổ kính của phố cổ trải dài trước mắt, hồ bơi rộng lớn trong xanh dưới ánh nắng mặt trời sẽ đem lại cho quý khách khoảnh khắc thư giãn tuyệt vời chỉ có tại nơi đây. Không chỉ có vậy, phòng tập với dụng cụ trang thiết bị tiện nghi, cùng với phòng tắm xông hơi và bể sục hiện đại sẽ đem lại những trải nghiệm khó quên trong chặng dừng chân này của quý khách.</p>
+                                            </div><!-- end columns -->
+                                        </div><!-- end row -->
+                                    </div><!-- end sports-club -->
+                                    
+                                </div><!-- end tab-content -->
+                            </div><!-- end detail-tabs -->
+
+                            <!-- comment -->
+                            <div>
+                                <div class="fb-comments" data-href="https://www.facebook.com/TQ-Art-Studio-100193108414582/?modal=admin_todo_tour" data-numposts="5" data-width="100%">
+                                </div>
+                            </div> <!-- end comment -->
+                            
+                            
+                            
+                            <div class="pages">
+                                <ol class="pagination">
+                                    <li><a href="hotel-listing-left-sidebar.html" aria-label="Previous"><span aria-hidden="true"><i class="fa fa-angle-left"></i></span></a></li>
+                                    <li><a href="hotel-detail-left-sidebar.html">1</a></li>
+                                    <li><a href="hanamihotel.html">2</a></li>
+                                    <li><a href="goldencrownhotel.html">3</a></li>
+                                    <li><a href="saphirdalathotel.html">4</a></li>
+                                    <li class="active"><a href="hotel-detail-right-sidebar.html" aria-label="Next"><span aria-hidden="true"><i class="fa fa-angle-right"></i></span></a></li>
+                                </ol>
+                            </div><!-- end pages -->
+                        </div><!-- end columns -->
+                                                
+                        <div class="col-xs-12 col-sm-12 col-md-3 side-bar right-side-bar">
+                            
+                           <div class="side-bar-block booking-form-block">
+                                <h2 class="selected-price">Thông tin</h2>
+                            
+                                <div class="booking-form">
+                                    <h3>Đặt</h3>
+                                    <p>Tìm khách sạn mơ ước của bạn ngày hôm nay</p>
+                                    
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Họ tên" />                                       
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Họ" />                                       
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email" />                                       
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Điện thoại" />                                       
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Thành phố" />                                       
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <input type="text" class="form-control dpd1" placeholder="Ngày tới" />                                              <i class="fa fa-calendar"></i>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <input type="text" class="form-control dpd2" placeholder="Ngày khởi hành" />                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                        
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-12 col-lg-6 no-sp-r">
+                                                <div class="form-group right-icon">
+                                                    <select class="form-control">
+                                                        <option selected>Phòng</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                    <i class="fa fa-angle-down"></i>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-6 col-md-12 col-lg-6 no-sp-l">    
+                                                <div class="form-group right-icon">
+                                                    <select class="form-control">
+                                                        <option selected>Giường</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                    <i class="fa fa-angle-down"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-12 col-lg-6 no-sp-r">
+                                                <div class="form-group right-icon">
+                                                    <select class="form-control">
+                                                        <option selected>Người lớn</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                    <i class="fa fa-angle-down"></i>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-6 col-md-12 col-lg-6 no-sp-l">    
+                                                <div class="form-group right-icon">
+                                                    <select class="form-control">
+                                                        <option selected>Trẻ em</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                    <i class="fa fa-angle-down"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group right-icon">
+                                            <select class="form-control">
+                                                <option selected>Phương thức thanh toán</option>
+                                                <option>Thẻ tín dụng</option>
+                                                <option>Paypal</option>
+                                            </select>
+                                            <i class="fa fa-angle-down"></i>
+                                        </div>
+                                        
+                                        <div class="checkbox custom-check">
+                                            <input type="checkbox" id="check01" name="checkbox"/>
+                                            <label for="check01"><span><i class="fa fa-check"></i></span>Bằng cách tiếp tục, bạn đồng ý với <a href="#">Điều khoản & Điều kiện</a></label>
+                                        </div>
+                                        
+                                        <button type="button" class="btn btn-block btn-orange" data-toggle="modal" data-target="#xacnhan">Xác nhận đặt phòng</button>
+                                  <!--       <input type="submit" name="" class="btn btn-block btn-orange" data-toggle="modal" data-target="#xacnhan" value="Xác nhận đặt phòng"> -->
+                                    </form>
+
+                                </div><!-- end booking-form -->
+                            </div><!-- end side-bar-block -->
+                            
+                            <div class="row">
+                                
+                                   <div class="col-xs-12 col-sm-12 col-md-12">    
+                                    <div class="side-bar-block support-block">
+                                        <h3>Liên hệ</h3>
+                                        <p>Mọi thắc mắc quý khách hàng xin vui lòng liên hệ:
+                                        </p>
+                                            <p><span><i class="fa fa-phone"></i></span> +0338.909.973</p>
+                                            <p><span><i class="fa fa-envelope"></i></span> tranmylinh849@gmail.com</p>
+                                             <p><span><i class="fa fa-envelope"></i></span> tttxuan.19it3@sict.udn.vn</p>
+                                    </div><!-- end side-bar-block -->
+                                </div><!-- end columns -->
+                                
+                            </div><!-- end row -->
+                        </div><!-- end columns -->  
+                        
+                    </div><!-- end row -->
+            	</div><!-- end container -->
+            </div><!-- end hotel-details -->
+        </section><!-- end innerpage-wrapper -->
+        
+        
+        <!--======================= BEST FEATURES =====================-->
+<section id="best-features" class="banner-padding black-features">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="b-feature-block">
+                    <span><i class="fa fa-dollar"></i></span>
+                    <h3>Đảm bảo giá tốt nhất</h3>
+                    <p>Cung cấp những ưu đãi hấp dẫn khách hàng khi lựa chọn tour.</p>
+                </div><!-- end b-feature-block -->
+            </div><!-- end columns -->
+
+            <div class="col-sm-6 col-md-3">
+                <div class="b-feature-block">
+                    <span><i class="fa fa-lock"></i></span>
+                    <h3>An toàn và bảo mật</h3>
+                    <p>Du Lịch Việt cam kết sẽ bảo mật những thông tin mang tính riêng tư của khách hàng, nhằm tôn trọng và bảo vệ quyền lợi của người truy cập.</p>
+                </div><!-- end b-feature-block -->
+            </div><!-- end columns -->
+
+            <div class="col-sm-6 col-md-3">
+                <div class="b-feature-block">
+                    <span><i class="fa fa-thumbs-up"></i></span>
+                    <h3>Đại lý du lịch tốt nhất</h3>
+                    <p>Làm cho quá trình lập kế hoạch du lịch dễ dàng hơn cho khách hàng của họ và đảm bảo họ trải nghiệm chuyến đi tốt nhất có thể.</p>
+                </div><!-- end b-feature-block -->
+            </div><!-- end columns -->
+
+            <div class="col-sm-6 col-md-3">
+                <div class="b-feature-block">
+                    <span><i class="fa fa-bars"></i></span>
+                    <h3>Hướng dẫn du lịch</h3>
+                    <p>Hướng dẫn viên sẽ sử dụng ngôn ngữ để giới thiệu, giải thích, hướng dẫn, giải đáp cho khách du lịch về văn hóa, lịch sử, ý nghĩa của các địa danh du lịch.</p>
+                </div><!-- end b-feature-block -->
+            </div><!-- end columns -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end best-features -->
+        
+        
+        
+<!--========================= NEWSLETTER-1 ==========================-->
+<section id="newsletter-1" class="section-padding back-size newsletter"> 
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                <h2>Theo dõi bản tin của chúng tôi</h2>
+                <p>Theo dõi để nhận được những cập nhật thú vị của chúng tôi</p>    
+                <form>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="email" class="form-control input-lg" placeholder="Nhập địa chỉ email của bạn" required/>
+                            <span class="input-group-btn"><button class="btn btn-lg"><i class="fa fa-envelope"></i></button></span>
+                        </div>
+                    </div>
+                </form>
+            </div><!-- end columns -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end newsletter-1 -->
+        
+        
+       
+<!--======================= FOOTER =======================-->
+<section id="footer" class="ftr-heading-o ftr-heading-mgn-1">
+
+    <div id="footer-top" class="banner-padding ftr-top-black ftr-text-white">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-widget ftr-contact">
+                    <h3 class="footer-heading">Liên hệ chúng tôi</h3>
+                    <ul class="list-unstyled">
+                        <li><span><i class="fa fa-map-marker"></i></span>Khoa Công nghệ thông tin và truyền thông - Đại Học Đà Nẵng</li>
+                        <li><span><i class="fa fa-phone"></i></span>+0338.909.973</li>
+                        <li><span><i class="fa fa-envelope"></i></span>tranmylinh849@gmail.com</li>
+                        <li><div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div></li>
+                    </ul>
+                </div><!-- end columns -->
+
+                <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 footer-widget ftr-links">
+                    <h3 class="footer-heading">Công ty</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="flight-homepage.html">Chuyến bay</a></li>
+                        <li><a href="hotel-homepage.html">Khách sạn</a></li>
+                        <li><a href="tour-homepage.html">Tour</a></li>
+                    </ul>
+                </div><!-- end columns -->
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-widget ftr-links ftr-pad-left">
+                    <h3 class="footer-heading">Tài nguyên</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="about-us.html">Liên hệ chúng tôi</a></li>
+                        <li><a href="login.html">Đăng nhập</a></li>
+                        <li><a href="registration.html">Đăng ký</a></li>
+                        <li><a href="contact-us.html">Sơ đồ trang web</a></li>
+                    </ul>
+                </div><!-- end columns -->
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 footer-widget ftr-about">
+                    <h3 class="footer-heading">Về chúng tôi</h3>
+                    <p>Với mong muốn phục vụ ngày càng nhiều khách du lịch Việt Nam và Thế giới. Logo của chúng tôi lấy màu chủ đạo là màu vàng màu của mảnh đất mẹ Việt Nam, những con người Việt Nam hiền lành, thân thiện luôn khát khao khám phá đất nước.</p>
+                    <ul class="social-links list-inline list-unstyled">
+                        <li><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
+                        <li><a href="#"><span><i class="fa fa-google-plus"></i></span></a></li>
+                        <li><a href="#"><span><i class="fa fa-instagram"></i></span></a></li>
+                        <li><a href="#"><span><i class="fa fa-youtube-play"></i></span></a></li>
+                    </ul>
+                </div><!-- end columns -->
+
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end footer-top -->
+
+    <div id="footer-bottom" class="ftr-bot-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="copyright">
+                    <p>© 2020 <a href="#">StarTravel</a>.</p>
+                </div><!-- end columns -->
+
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="terms">
+                    <ul class="list-unstyled list-inline">
+                        <li><a href="#">Điều khoản và điều kiện</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div><!-- end columns -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end footer-bottom -->
+
+</section><!-- end footer -->
+
+ <div id="edit-profile" class="modal custom-modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div><!-- end modal-header -->
+                    
+                    <div class="modal-body">
+                           <div class="custom-form custom-form-fields">
+                                    <h3>ĐĂNG NHẬP</h3>
+                                    <p>Xin mời đăng nhập. (*) là phần không được bỏ trống.</p>
+                                    <form>
+                                            
+                                        <div class="form-group">
+                                             <input type="text" class="form-control" placeholder="Tên tài khoản(*)"  required/>
+                                             <span><i class="fa fa-user"></i></span>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                             <input type="password" class="form-control" placeholder="Mật khẩu(*)"  required/>
+                                             <span><i class="fa fa-lock"></i></span>
+                                        </div>
+                                        
+                                        <div class="checkbox">
+                                             <label><input type="checkbox"> Tôi đồng ý với điều khoản của bạn</label>
+                                        </div>
+                                        
+                                        <button class="btn btn-orange btn-block">ĐĂNG NHẬP</button>
+                                    </form>
+                                    
+                                    <div class="other-links">
+                                        <p class="link-line">Chưa có tài khoản? Ở đây? <a href="#edit-profile1">Đăng ký</a></p>
+                                        <a class="simple-link" href="#">Quên mật khẩu</a>
+                                    </div><!-- end other-links -->
+                                </div><!-- end custom-form -->
+                    </div><!-- end modal-bpdy -->
+                </div><!-- end modal-content -->
+            </div><!-- end modal-dialog -->
+        </div><!-- end edit-profile dăng nhap -->
+
+         <div id="edit-profile1" class="modal custom-modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div><!-- end modal-header -->
+                    
+                    <div class="modal-body">
+                          <div class="custom-form custom-form-fields">
+                    <h3>Trang đăng ký</h3>
+                    <p>Xin mời bạn điền vào những thành phần bên dưới. (*) là phần không được bỏ trống.</p>
+                    <form>
+
+                        <div class="form-group">
+                           <input type="text" class="form-control" placeholder="Tên tài khoản"  required/>
+                           <span><i class="fa fa-user"></i></span>
+                       </div>
+
+                       <div class="form-group">
+                           <input type="Email" class="form-control" placeholder="Email"  required/>
+                           <span><i class="fa fa-envelope"></i></span>
+                       </div>
+
+                       <div class="form-group">
+                           <input type="password" class="form-control" placeholder="Mật khẩu"  required/>
+                           <span><i class="fa fa-lock"></i></span>
+                       </div>
+
+                       <div class="form-group">
+                           <input type="password" class="form-control" placeholder="Xác nhận mật khẩu"  required/>
+                           <span><i class="fa fa-lock"></i></span>
+                       </div>
+
+                       <button class="btn btn-orange btn-block">ĐĂNG KÝ</button>
+                   </form>
+
+                   <div class="other-links">
+                       <p class="link-line">Có tài khoản chưa? <a href="#edit-profile">Đăng nhập tại đây</a></p>
+                   </div><!-- end other-links -->
+               </div><!-- end custom-form -->
+                    </div><!-- end modal-bpdy -->
+                </div><!-- end modal-content -->
+            </div><!-- end modal-dialog -->
+        </div><!-- end edit-profile dăng ký -->
+
+        <!-- Modal -->
+  <div class="modal fade" id="xacnhan" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Xác nhận đặt phòng</h4>
+        </div>
+        <div class="modal-body">
+          <p>Bạn đã đặt phòng thành công!</p>
+        </div>
+        <div class="modal-footer" style="display: flex; flex-direction: row; justify-content: flex-end;">
+          <button type="button" class="btn btn-block btn-orange" data-dismiss="modal" style="width: auto; "  onclick="location.href='hotel-detail-right-sidebar.html'">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        
+        <!-- Page Scripts Starts -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/custom-navigation.js"></script>
+        <script src="js/custom-date-picker.js"></script>
+        <script src="js/custom-slick.js"></script>
+        <!-- Page Scripts Ends -->
+    </body>
+</html>
